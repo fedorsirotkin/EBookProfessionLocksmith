@@ -1,0 +1,116 @@
+<script type="text/javascript">
+	// для плавной смены контента
+    $(document).ready(function() {
+      	$("body").css("display", "none");
+    });
+</script>
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" type="image/ico" href="../images/favicon.png"/>
+  <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+	МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник» | Электронный учебник 
+  </title>
+  <link href="../css/mystylecontent.css" rel="stylesheet">
+  <!-- подключение локальной базы данных -->
+  <!-- <script type="text/javascript" src="../js/localdb.js"></script> -->
+ </head>
+ <body>
+	<div class="class">
+		<div id="back-top"><a href="#top"><img src="../images/uparrow.png" style="width: 50px; height: 80px;" alt=""></a></div>
+	</div>
+	<div id="head">
+		<a href="../index.html">На главную</a>
+		<a href="content.html">Содержание</a>
+	</div> 
+	<div id="article">
+		<div class="parent">
+			<div class="child">
+				<h1 class="boxShadow10">РАЗМЕТКА. БЕЗОПАСНОТЬ ТРУДА</h1>
+				<br>
+				<div class="container">
+					<div class="box">				
+						<div id="block" style="margin-top: 15px; margin-left: 10px; width: 400px;">
+							<p style="text-align: left;">
+								<span class="boldcenter">до начала работы:</span><br>
+								1. Надеть спецодежду.
+								<br>2. Заготовки (детали) и приспособления надёжно установить не на краю плиты, а ближе к середине.
+								<br>3. Перед установкой заготовок проверить плиту на устойчивость.
+							</p>
+						</div>	
+					</div>
+				</div>
+				<div class="container">
+					<div class="box">								
+						<div id="block" style="margin-top: 15px; margin-left: 10px; width: 400px;">
+							<p style="text-align: left;">
+								<span class="boldcenter">во время работы:</span><br>
+								1. На свободные (неиспользуемые) острозаточенные концы чертилок обязательно надеть предохранительные пробки или специальные колпачки.
+								<br>2. Медный купорос наносится только кисточкой, так как он ядовит.
+								<br>3. Проходы вокруг размёточной плиты должны быть свободными.
+									
+							</p>
+						</div>	
+					</div>
+				</div>
+				<div class="container">
+					<div class="box">									
+						<div id="block" style="margin-top: 15px; margin-left: 10px; width: 400px;">
+							<p style="text-align: left;">
+								<span class="boldcenter">после окончания работы:</span><br>
+								1.	Удалять пыль и окалину с размёточной плиты только щёткой, а с крупных плит – метлой.
+								<br>2. Промасленную ветошь и бумагу складывать в  специальные металлические ящики с крышкой.						
+							</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	<div id="bottom">
+		<a href="../tests/topic1_5/show.html" class="buttons"><button class="button">Назад<span class="buttonhelp">Последовательность разметки</span></button></a>	
+		<a href="content.html" class="buttons"><button class="button">К содержанию<span class="buttonhelp">Перейти к перечню заголовков</span></button></a>
+		<a href="../presentations/topic1_7/show.html" class="buttons"><button class="button">Далее<span class="buttonhelp">Презентация по теме</span></button></a>	
+		<hr><p>МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник»</p>
+	</div> 	
+ </body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+      	    $("body").fadeIn(300);
+	
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(300, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}    
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#back-top").hide();
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-top').fadeIn();
+				} else {
+					$('#back-top').fadeOut();
+				}
+			});
+			
+			$('#back-top a').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+	});
+</script>

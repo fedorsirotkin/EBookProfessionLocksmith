@@ -1,0 +1,701 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 11pt;
+	font-family: 'Times New Roman';
+	background: rgba(255, 255, 255, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;	
+}
+
+.button {
+	font-family: 'Times New Roman';
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding: 0;
+    position: relative;
+    background: rgba(0, 95, 189, 0.9);
+    border: none;
+    font-size: 14pt;
+    color: #fcfcfc;
+    padding: auto 20px auto 0px;
+    width: 285px;
+	height: 40px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgba(0, 95, 189, 1);
+}
+
+.button:after {
+    content: "";
+    background: rgba(2, 62, 124, .9);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 0.5;
+    transition: 0s;
+}
+
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.checkbox + label {
+  cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox:not(checked) + label {
+	position: relative; /* будем позиционировать псевдочекбокс относительно label */
+	padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
+}
+
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label:before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 50px;
+	height: 26px;
+	border-radius: 13px;
+	background: #CDD1DA;
+}
+
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox:not(checked) + label:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 2px;
+	width: 22px;
+	height: 22px;
+	border-radius: 10px;
+	background: #FFF;
+	transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox:checked + label:before {
+	background: #9FD468;
+}
+
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.checkbox:checked + label:after {
+	left: 26px;
+}
+
+#head {
+	position: none;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+	background: rgba(0, 95, 189, 0.9);
+	min-height: 28px;
+	color: #fcfcfc;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	-webkit-user-select: none;	
+	cursor: default;
+}
+
+#head img {
+	height: 80px;
+	width: 80px;
+	padding-left: 20px;
+}
+
+#head a {
+	min-width: 420px;
+	min-height: 28px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 4px;
+	padding-top: 2px;
+	color: #fcfcfc;
+	background: rgba(14, 104, 187, 1);
+	font-size: 20px;
+	vertical-align: middle;
+	-webkit-user-select: none;	
+	cursor: pointer;	
+	transition: 0.1s;	
+}
+
+#head a:hover {
+	text-decoration: none;
+	background: rgba(0, 95, 189, 1);
+	transition: 0.1s;	
+}
+
+#article {
+	margin: auto;
+	padding: 0;
+	max-width: 990px;
+	color: #1e1e1e;
+	border-radius: 5px;
+	min-height: 700px;
+	height: auto;
+	vertical-align: middle;
+	-webkit-user-select: none;	
+	cursor: default;	
+	padding-bottom: 15px;
+	background: rgba(255, 255, 255, 1);
+}
+
+#article ol {
+	margin: 0;
+	padding: 0;	
+	font-size: 14pt;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 37.8px;
+	padding-right: 37.8px;	
+	text-indent: 47.2px; /* отступ первой строки в пикселах */
+	line-height: 1.5; /* межстрочный интервал */
+	text-align: justify;
+	counter-reset: item;
+}
+
+#article ol .topic {
+	font-size: 18pt;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;	
+}
+
+#article ol .notopic {
+	font-size: 14pt;
+	font-weight: normal;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;	
+}
+
+#article li {
+	display: block;
+}
+
+#article li:before {
+	content: counters(item, ".") " ";
+	counter-increment: item;
+}
+
+hr {
+	color: #fff;
+}
+
+#article a {
+	font-size: 14pt;
+	padding-left: 0px;	
+	display: block;
+	text-decoration: none;
+	color: rgba(1, 1, 1, 1);
+	transition: 0.1s;	
+	
+}
+
+#article a.buttons {
+	display: inline-block;
+	text-decoration: none;
+	color: #fcfcfc;
+	font-size: 20px;
+	vertical-align: middle;
+	-webkit-user-select: none;	
+	cursor: pointer;	
+	transition: 0.1s;	
+}
+
+#article a.buttons:hover {
+	text-decoration: none;
+	background: none;
+	padding-left: 0px;
+	transition: 0.1s;		
+}
+
+#bottom a.buttons {
+	display: inline-block;
+	text-decoration: none;
+	color: #fcfcfc;
+	font-size: 20px;
+	vertical-align: middle;
+	-webkit-user-select: none;	
+	cursor: pointer;	
+	transition: 0.1s;	
+}
+
+#bottom a.buttons:hover {
+	text-decoration: none;
+	background: none;
+	padding-left: 0px;
+	transition: 0.1s;		
+}
+
+#article a:hover {
+	text-decoration: none;
+	background: rgba(23, 108, 193, 0.1);
+	padding-left: 5px;
+	transition: 0.1s;	
+}
+
+#article a:active {
+	text-decoration: underline;
+}
+	
+#article h1 {
+	font-size: 18pt;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+}
+
+#article p {
+	margin: 0;
+	font-size: 14pt;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 37.8px;
+	padding-right: 37.8px;	
+	text-indent: 10px; /* отступ первой строки в пикселах */
+	line-height: 1.5; /* межстрочный интервал */
+	text-align: justify;
+}
+
+#article input {
+	font-family: 'Times New Roman';	
+	font-size: 14pt;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;	
+	padding-bottom: 4px;
+	
+	
+}
+
+#article textarea {
+	font-family: 'Times New Roman';	
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	font-size: 14pt;
+	text-align: justify;
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;	
+	padding-bottom: 4px;
+	min-width: 100%;
+	max-width: 810px;
+	min-height: 60px;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover {
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+.control_work_textarea {
+	font-family: 'Times New Roman';
+	margin: 0;
+	padding: 0;
+    outline: none !important;
+    border: 0px solid red;
+	resize: none;
+	
+}
+
+.control_work_input {
+	font-family: 'Times New Roman';
+	margin: 0;
+	padding: 0;
+    outline: none !important;
+    border: 0px solid red;
+	resize: none;
+	width: 100%;
+	
+}
+
+.control_work_td {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #bbbbbb;
+}
+
+.control_work_td_padding {
+	margin: 0;
+	border: 1px solid #bbbbbb;
+}
+
+#article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;	
+	max-width: 80%;
+	max-height: 80%;
+	-webkit-user-select: none;	
+	
+}
+
+#bottom {	
+	margin: 0;
+	padding: 0;	
+	text-align: center;
+	min-height: 18px;
+	color: #fcfcfc;
+	background: rgba(255, 255, 255, 1);
+	width: 100%;
+	-webkit-user-select: none;	
+	cursor: default;
+}
+
+#bottom p {	
+	margin: 0;
+	padding: 0;
+	color: rgba(0, 0, 0, 0.9);
+	text-align: center;
+}
+
+#bottom p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#bottom hr {
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+}
+
+.parent {
+	width: 990px;
+	text-align: center;
+	border: 0px solid #dd0;
+	background: rgba(255, 255, 255, 1);
+}
+.child {
+	display: -moz-inline-box;
+	display: inline-block;
+	vertical-align: top;
+	width: 99%;
+	color: #000000;
+	border: 0px solid #080;
+}
+
+.helper {
+	display:-moz-inline-box;
+	display:inline-block;
+	height:100%;
+	width:0px;
+	vertical-align:middle;
+	zoom:1;
+}
+
+/*  код увеличителя начинается здесь */
+img[tabindex="0"] {
+	cursor: zoom-in;
+}
+
+img[tabindex="0"]:focus {
+	z-index: 10;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+	min-width: 99%;
+	min-height: 99%;
+	margin: auto;
+}
+
+img[tabindex="0"]:focus,  /* убрать строку, если не нужно, чтобы при клике на увеличенное фото, оно возвращалось в исходное состояние */
+img[tabindex="0"]:focus ~ * {
+  pointer-events: none;
+  cursor: zoom-out;
+}
+/*  код увеличителя закончен */
+
+/*  код кнопки наверх начинается здесь */
+#back-top {
+	position: fixed; bottom: 40px; right: 10px;
+}
+
+#back-top a { 
+	width: 48px; 
+	display: block;
+	text-align: center; 
+	font: bold 10px; 
+	text-transform: uppercase; 
+	text-decoration: none; 
+	color: #fff;		
+	-webkit-transition: 1s; 
+	-moz-transition: 1s; 
+	transition: 1s;
+}
+
+#back-top a:hover {	
+	text-decoration: underline;
+}
+
+#back-top img { 
+	opacity: 0.1;
+	-webkit-transition: 0.3s; 
+	-moz-transition: 0.3s;
+	
+	transition: 0.3s;
+}
+#back-top img:hover { 
+	opacity: 1;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s; 
+	transition: 0.3s;
+}
+/*  код кнопки наверх закончен */
+
+/*  заголовки начало */
+.boxShadow10 {
+	text-transform: uppercase;	
+	width: 100%;
+	max-width: 900px;
+	margin: 20px auto 5px auto;
+	box-shadow:
+		0 0 0 0px silver,
+		0 -11px 0 -10px rgba(0, 95, 189, 0.9),
+		0 11px 0 -10px rgba(0, 95, 189, 0.9);
+}
+/*  заголовки конец */
+
+#block {
+	margin: auto;
+	background: rgba(251, 251, 251, 1);
+	width: 300px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px 0px;
+	text-align: center;
+	border: 3px outset rgba(0, 95, 189, 0.9);
+	-webkit-transition: 0.1s;
+	-moz-transition: 0.1s; 
+	transition: 0.1s;
+}
+
+#block2 {
+	margin: auto;
+	background: rgba(251, 251, 251, 1);
+	width: 360px;
+	padding: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: 0px 0px 0px 0px;
+	text-align: center;
+	border: 0px outset rgba(0, 95, 189, 0.9);
+	-webkit-transition: 0.1s;
+	-moz-transition: 0.1s; 
+	transition: 0.1s;
+
+}
+
+#block2 h2 {
+	font-size: 16pt;
+	text-transform: uppercase;
+	color: rgba(1, 1, 1, 1); 	
+}
+
+#block2 p {
+	font-weight: normal;
+	font-size: 14pt;
+	padding: 0px;
+	margin: 0;
+	text-indent: 0px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+#block h2 {
+	font-size: 16pt;
+	text-transform: uppercase;
+	color: rgba(1, 1, 1, 1); 	
+}
+
+#block p {
+	font-weight: normal;
+	font-size: 14pt;
+	padding: 0px;
+	margin: 0;
+	text-indent: 0px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.imgcontent {
+	margin: 5px 5px 5px 5px;
+	width: 20px;
+	height: 60px;
+}
+
+.imgcontentlong {
+	margin: 5px 5px 5px 5px;
+	width: 1px;
+	height: 60px;
+}
+
+.img2content {
+	margin: 5px 150px 5px 150px;
+	width: 40px;
+	height: 60px;
+}
+
+.bold {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.boldcenter {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.container {
+	margin: 0;
+	width: 100%;
+}
+
+.box div {
+	vertical-align: top;
+	width: 400px;
+	display: inline-block;
+	border: 1px solid black;
+	text-align: justify;
+}
+
+.buttonhelp {
+	font-size: 10pt;
+	font-style: italic;
+	display:none;		
+}
+
+.button:hover > .buttonhelp {
+	display:block;
+}
+
+#article hr {
+	margin: 0;
+	padding: 0;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	opacity: 0.1;
+}
+
+.line { 
+	border-left: 3px solid rgba(0, 95, 189, 0.9); /* Параметры линии */ 
+	margin-left: 200px; /* Отступ слева */
+	padding-left: 10px; /* Расстояние от линии до текста */ 
+}
+
+.circle {
+	width:100px;
+	height:100px;
+	display:block;
+	border-radius:50px;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
+	-khtml-border-radius:50px;
+	font-size:20px; color:#fff;
+	line-height:100px;
+	text-align:center;
+	background:#000;
+}
+
+.arrow-right {
+	border: 40px solid transparent; 
+	border-left-color: steelblue;  
+	border-right: 0;
+}
+
+table { 
+	width: 90%; /* Ширина таблицы */
+	border: 0px double rgba(0, 95, 189, 0.9); /* Рамка вокруг таблицы */
+	border-collapse: collapse; /* Отображать только одинарные линии */
+	margin: auto; /* Выравниваем таблицу по центру окна  */
+	table-layout: fixed;
+}
+
+th { 
+	text-align: center; /* Выравнивание */
+	padding: 5px; /* Поля вокруг содержимого ячеек */
+	border: 1px solid rgba(0, 95, 189, 0.9); /* Граница вокруг ячеек */
+	font-size: 16pt;
+}
+
+td { 
+	text-align: left; /* Выравнивание */
+	padding: 10px 15px 10px 15px; /* Поля вокруг содержимого ячеек */
+	border: 1px solid rgba(0, 95, 189, 0.9); /* Граница вокруг ячеек */
+	font-size: 14pt;	
+    overflow: hidden;
+    text-overflow: ellipsis;	
+} 
+
+td img {
+    display: block;
+    margin: 0 auto;
+}
+
+.widthcell {
+	width: 40%;
+}

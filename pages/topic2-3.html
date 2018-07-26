@@ -1,0 +1,97 @@
+<script type="text/javascript">
+	// для плавной смены контента
+    $(document).ready(function() {
+      	$("body").css("display", "none");
+    });
+</script>
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" type="image/ico" href="../images/favicon.png"/>
+  <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+	МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник» | Электронный учебник 
+  </title>
+  <link href="../css/mystylecontent.css" rel="stylesheet">
+  <!-- подключение локальной базы данных -->
+  <!-- <script type="text/javascript" src="../js/localdb.js"></script> -->
+ </head>
+ <body>
+	<div class="class">
+		<div id="back-top"><a href="#top"><img src="../images/uparrow.png" style="width: 50px; height: 80px;" alt=""></a></div>
+	</div>
+	<div id="head">
+		<a href="../index.html">На главную</a>
+		<a href="content.html">Содержание</a>
+	</div> 
+	<div id="article">
+		<div class="parent">
+			<div class="child">
+				<h1 class="boxShadow10">РУБКА МЕТАЛЛА. ПРИСПОСОБЛЕНИЯ И ОБОРУДОВАНИЕ</h1>						
+			</div>
+			<br>
+			<img src="../images/topic2-3-1.png" style="" alt=""><br>
+			<h2>ТИСКИ</h2>
+			<p>
+			При рубке используют наиболее прочные и тяжёлые
+			тиски. При слесарной рубке применяют поворотные
+			и неповоротные тиски с параллельными губками, при тяжёлой
+			кузнечной – стуловые, которые
+			крепят на специальной тумбе.
+			</p>
+			<br><img src="../images/topic2-3-2.png" style="" alt=""><br>
+			<h2>НА ПЛИТЕ</h2><br>
+			<br><img src="../images/topic2-3-3.png" style="" alt=""><br>
+			<h2>ЗАТОЧНЫЙ СТАНОК</h2>
+			<p>
+				Заточка инструмента производится на заточном станке. Для заточки зубило или крейцмейсель накладывают на передвижной подручник и с лёгким нажимом медленно передвигают по всей ширине шлифовального круга, переодически поворачивая инструмент то одной, то другой стороной. Перед заточкой инструмента подручник устанавливают как можно ближе к шлифовальному кругу, Зазор между подручником и заточным кругом должен быть не более 2-3мм.
+				Заточку лучше всего вести с охлаждением водой, в которую добавлено 5% соды, или на мокром круге.
+			</p>			
+		</div>
+    </div>
+	<div id="bottom">
+		<a href="topic2-2.html" class="buttons"><button class="button">Назад<span class="buttonhelp">Инструменты</span></button></a>	
+		<a href="content.html" class="buttons"><button class="button">К содержанию<span class="buttonhelp">Перейти к перечню заголовков</span></button></a>
+		<a href="topic2-4.html" class="buttons"><button class="button">Далее<span class="buttonhelp">Техника рубки</span></button></a>	
+		<hr><p>МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник»</p>
+	</div> 	
+ </body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+      	    $("body").fadeIn(300);
+	
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(300, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}    
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#back-top").hide();
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-top').fadeIn();
+				} else {
+					$('#back-top').fadeOut();
+				}
+			});
+			
+			$('#back-top a').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+	});
+</script>

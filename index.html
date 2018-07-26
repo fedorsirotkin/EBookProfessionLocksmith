@@ -1,0 +1,66 @@
+<script type="text/javascript">
+	// для плавной смены контента
+    $(document).ready(function() {
+      	$("body").css("display", "none");
+    });
+</script>
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" type="image/ico" href="images/favicon.png"/>
+  <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+	МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник» | Электронный учебник 
+  </title>
+  <link href="css/mystylemain.css" rel="stylesheet">
+ </head>
+ <body>
+	<div id="head">
+	  <h4>
+		Министерство образования Нижегородской области<br>
+		Государственное бюджетное профессиональное<br>
+		образовательное учреждение<br>
+		«Нижегородский автомеханический техникум»<br>
+	  </h4> 
+	</div> 
+	<div id="article">
+		<div class="parent">
+			<div class="child">
+			  <h3>
+				Книга для студентов
+			  </h3>
+			  <h1>
+				МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник»
+			  </h1>
+			  <h2>
+				Преподаватель: Кошкина С.А.
+			  </h2>	
+				<a href="pages/content.html" class="transition"><button class="button">Перейти к изучению!</button></a>				    
+			</div>
+			<div class="helper"></div>
+		</div>
+    </div>		
+	<div id="bottom">
+	  <h5>
+		Нижний Новгород – 2016
+	  </h5>
+	</div>
+ </body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+      	    $("body").fadeIn(300);
+	
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(300, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}    
+	});
+</script>

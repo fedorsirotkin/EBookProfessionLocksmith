@@ -1,0 +1,960 @@
+<script type="text/javascript">
+	// для плавной смены контента
+    $(document).ready(function() {
+      	$("body").css("display", "none");
+    });
+</script>
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" type="image/ico" href="../images/favicon.png"/>
+  <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script> 
+  <script type="text/javascript" src="../js/FileSaver.js"></script> 
+  <script type="text/javascript" src="../js/jquery.wordexport.js"></script> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+	МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник» | Электронный учебник 
+  </title>
+  <link href="../css/mystylecontent.css" rel="stylesheet">
+  <!-- подключение локальной базы данных -->
+  <!-- <script type="text/javascript" src="../js/localdb.js"></script> -->
+ </head>
+ <body onload="dotest(); showInput();">
+	<div class="class">
+		<div id="back-top"><a href="#top"><img src="../images/uparrow.png" style="width: 50px; height: 80px;" alt=""></a></div>
+	</div>
+	<div id="head">
+		<a href="../index.html">На главную</a>
+		<a href="content.html">Содержание</a>
+	</div> 
+	<div id="article">
+		<div class="parent">
+			<div class="child">
+				<h1 class="boxShadow10">ПРОВЕРКА СТЕПЕНИ УСВОЕНИЯ МАТЕРИАЛА: КОНТРОЛЬНАЯ РАБОТА ПО ТЕМЕ "ОПИЛИВАНИЕ МЕТАЛЛА"</h1>			
+				<p style="text-align: center;">
+					<input name="checkbox" id="checkbox" type="checkbox" class="checkbox" onclick="">
+					<label for="checkbox">хранить историю введенных данных</label>		
+				</p>
+				<p>	
+					<table>
+						<tr>
+							<td class="control_work_td" style="width: 20%;">
+								&nbsp;Ф. И. студента:
+							</td>
+							<td class="control_work_td">
+								<input id="field5_1" type="text" placeholder="Ф.И. студента" onchange="showInput();" class="control_work_input">
+							</td>
+						</tr>
+						<tr>
+							<td class="control_work_td">
+								&nbsp;№ группы:
+							</td>
+							<td class="control_work_td">
+								<input id="field5_2" type="text" placeholder="Номер группы" onchange="showInput();" class="control_work_input">				
+							</td>					
+						</tr>
+					</table>					
+				</p>
+				<p><strong>Задание: Письменно дайте ответы на вопросы.</strong></p>
+				<p>1. Что называется опиливанием?<br>
+				<textarea id="field5_3" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>2. Из каких материалов могут быть изготовлены напильники?<br>
+				<textarea id="field5_4" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>3. Напишите элементы слесарного напильника<br>	
+				<img src="../images/topic5-8-1.png" alt=""><br>				
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 10%;">
+							&nbsp;&nbsp;&nbsp;1)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field5_5" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;2)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field5_6" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;3)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field5_7" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;4)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field5_8" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;5)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field5_9" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;6)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field5_10" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;7)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field5_11" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>	
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;8)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field5_12" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>					
+				</table></p>
+				<p>4. Определите тип насечки на напильниках и напишите в каких целях их применяют.<br>	
+				<img src="../images/topic5-8-2.png" alt=""><br>				
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 10%;">
+							&nbsp;&nbsp;&nbsp;а)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_13" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;б)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_14" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>			
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;в)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_15" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>			
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;г)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_16" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>			
+						</td>					
+					</tr>				
+				</table></p>
+				<p>5. С какой целью наносят на напильник вспомогательную насечку?<br>
+				<textarea id="field5_17" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>6. Как классифицируются напильники в зависимости от числа зубьев на 1см<sup>2</sup> <br>
+				<textarea id="field5_18" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>7. С какой точностью можно опилить деталь напильником?<br>				
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 30%;">
+							&nbsp;&nbsp;&nbsp;драчевым (№0; №1) &nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_19" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;личным  (№2; №3) &nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_20" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>			
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;бархатным (№4; №5)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_21" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>			
+						</td>					
+					</tr>			
+				</table></p>
+				<p>8. Укажите последовательность опиливания плоских сопрягаемых поверхностей: <br>
+				<textarea id="field5_22" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>9. В чем особенность опиливания криволинейных поверхностей?<br>
+				<textarea id="field5_23" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>10. Какой тип насечки используют для обработки:<br>				
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 20%;">
+							&nbsp;&nbsp;&nbsp;а) кожи&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_24" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 20%;">
+							&nbsp;&nbsp;&nbsp;б) цинка&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_25" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 20%;">
+							&nbsp;&nbsp;&nbsp;в) латуни&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_26" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 20%;">
+							&nbsp;&nbsp;&nbsp;г) чугуна&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_27" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 20%;">
+							&nbsp;&nbsp;&nbsp;д) свинца&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_28" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 20%;">
+							&nbsp;&nbsp;&nbsp;е) меди&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_29" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 20%;">
+							&nbsp;&nbsp;&nbsp;ж) алюминия&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_30" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>	
+					<tr>
+						<td class="control_work_td" style="width: 20%;">
+							&nbsp;&nbsp;&nbsp;з) бронзы&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_31" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>						
+				</table></p>
+				<p>11. Как классифицируются напильники по форме поперечного сечения?<br>
+				<textarea id="field5_32" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>12. Укажите особенности напильников специального назначения:<br>				
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 25%;">
+							&nbsp;&nbsp;&nbsp;а) для обработки цветных сплавов&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_33" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 25%;">
+							&nbsp;&nbsp;&nbsp;б) для обработки неметаллических материалов&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_34" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 25%;">
+							&nbsp;&nbsp;&nbsp;в) тарированных напильников&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_35" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 25%;">
+							&nbsp;&nbsp;&nbsp;г) алмазных напильников&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_36" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>						
+				</table></p>	
+				<p>13. Какие правила необходимо соблюдать для правильного выбора напильника?<br>
+				<textarea id="field5_37" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>14. Какие инструменты применяют для контроля после опиливания?<br>
+				<textarea id="field5_38" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>15. В каких случаях применяются надфили<br>
+				<textarea id="field5_39" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>16. Определите тип надфиля:<br>
+				<img src="../images/topic5-8-3.png" alt=""><br>	
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 8%;">
+							&nbsp;&nbsp;&nbsp;а) &nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_40" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 8%;">
+							&nbsp;&nbsp;&nbsp;б) &nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_41" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 8%;">
+							&nbsp;&nbsp;&nbsp;в) &nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_42" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 8%;">
+							&nbsp;&nbsp;&nbsp;г) &nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_43" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 8%;">
+							&nbsp;&nbsp;&nbsp;д) &nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field5_44" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>					
+				</table>				
+				</p>
+				<p>17. Под каким углом наносится основная и вспомогательные насечки? <br>
+				<textarea id="field5_45" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>18. Основные правила опиливания:<br>
+				<textarea id="field5_46" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>				
+				<!-- Отладка экспорта - Начало -->
+				<div id="page-content" style="display: none;">
+					<p style="text-align: center; font-size: 16pt;">
+							<strong>
+								Контрольная работа по теме<br> "Опиливание металла"
+							</strong>
+					</p>
+					<p style="text-indent: 0px;">
+						Ф. И. студента: &nbsp;<span id="answer5_1"></span>
+						<br>№ группы: &nbsp;<span id="answer5_2"></span>					
+					</p>
+					<p>
+						Задание: Письменно дайте ответы на вопросы.
+					</p>
+					<!-- Контент для экспорта -->
+					<p>
+						1. Что называется опиливанием?
+						<br><span id="answer5_3"></span>
+					</p>
+					<p>
+						2. Из каких материалов могут быть изготовлены напильники
+						<br><span id="answer5_4"></span>
+					</p>
+					<p>
+						3. Напишите элементы слесарного напильника
+						<br>1. <span id="answer5_5"></span>
+						<br>2. <span id="answer5_6"></span>
+						<br>3. <span id="answer5_7"></span>
+						<br>4. <span id="answer5_8"></span>
+						<br>5. <span id="answer5_9"></span>
+						<br>6. <span id="answer5_10"></span>
+						<br>7. <span id="answer5_11"></span>
+						<br>8. <span id="answer5_12"></span>
+					</p>
+					<p>
+						4. Определите тип насечки на напильниках и напишите в каких целях их применяют
+						<br>А. <span id="answer5_13"></span>
+						<br>Б. <span id="answer5_14"></span>
+						<br>В. <span id="answer5_15"></span>
+						<br>Г. <span id="answer5_16"></span>
+					</p>
+					<p>
+						5. С какой целью наносят на напильник вспомогательную насечку?
+						<br><span id="answer5_17"></span>
+					</p>
+					<p>
+						6. Как классифицируются напильники в зависимости от числа зубьев на 1см&deg;?
+						<br><span id="answer5_18"></span>
+					</p>
+					<p>
+						7.  С какой точностью можно опилить деталь напильником:
+						<br>а) драчевым (№0; №1) -  <span id="answer5_19"></span>
+						<br>б) личным  (№2; №3) - <span id="answer5_20"></span>
+						<br>в) бархатным (№4; №5) - <span id="answer5_21"></span>
+					</p>
+					<p>
+						8. Укажите последовательность опиливания плоских сопрягаемых поверхностей:
+						<br><span id="answer5_22"></span>
+					</p>
+					<p>
+						9. В чем особенность опиливания криволинейных поверхностей?
+						<br><span id="answer5_23"></span>
+					</p>
+					<p>
+						10. Какой тип насечки используют для обработки:
+						<br>А) кожи - <span id="answer5_24"></span>
+						<br>Б) цинка - <span id="answer5_25"></span>
+						<br>В) латуни - <span id="answer5_26"></span>
+						<br>Г) чугуна - <span id="answer5_27"></span>
+						<br>Д) свинца - <span id="answer5_28"></span>
+						<br>Е) меди - <span id="answer5_29"></span>
+						<br>Ж) алюминия - <span id="answer5_30"></span>
+						<br>З) бронзы - <span id="answer5_31"></span>
+					</p>
+					<p>
+						11. Как классифицируются напильники по форме поперечного сечения? 
+						<br><span id="answer5_32"></span>
+					</p>
+					<p>
+						12. Укажите особенности напильников специального назначения:
+						<br>а) для обработки цветных  сплавов
+						<br><span id="answer5_33"></span>
+						<br>б) для обработки неметаллических материалов
+						<br><span id="answer5_34"></span>
+						<br>в) тарированных напильников
+						<br><span id="answer5_35"></span>
+						<br>г) алмазных напильников
+						<br><span id="answer5_36"></span>
+					</p>
+					<p>
+						13. Какие правила необходимо соблюдать для правильного выбора напильника?
+						<br><span id="answer5_37"></span>
+					</p>
+					<p>
+						14. Какие инструменты применяют для контроля после опиливания?
+						<br><span id="answer5_38"></span>
+					</p>
+					<p>
+						15. В каких случаях применяются надфили
+						<br><span id="answer5_39"></span>
+					</p>
+					<p>
+						16. Определите тип надфиля:
+						<br>А. <span id="answer5_40"></span>
+						<br>Б. <span id="answer5_41"></span>
+						<br>В. <span id="answer5_42"></span>
+						<br>Г. <span id="answer5_43"></span>
+						<br>Д. <span id="answer5_44"></span>
+					</p>
+					<p>
+						17. Под каким углом наносится основная и вспомогательные насечки?
+						<br><span id="answer5_45"></span>
+					</p>
+					<p>
+						18. Основные правила опиливания
+						<br><span id="answer5_46"></span>
+					</p>
+				</div>
+				<!-- Отладка экспорта - Конец -->				
+				<a class="word-export buttons" href="javascript:void(0);"><button class="button word-export" onclick="">Сохранить результаты<span class="buttonhelp">Сохранить работу в формате *.doc</span></button></a> 
+				<a class="buttons"><button class="button" onclick="clearfield5_(); clearLocalStorage();">Очистить все поля<span class="buttonhelp">Стереть данные и историю из всех полей</span></button></a> 			
+			</div>
+		</div>
+	</div>
+	<div id="bottom">
+		<a href="../tests/topic5_7/show.html" class="buttons"><button class="button">Назад<span class="buttonhelp">Промежуточный тест</span></button></a>	
+		<a href="content.html" class="buttons"><button class="button">К содержанию<span class="buttonhelp">Перейти к перечню заголовков</span></button></a>	
+		<hr><p>МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник»</p>
+	</div> 	
+ </body>
+</html>
+<script>
+	//html-to-doc
+    jQuery(document).ready(function($) {
+        $("a.word-export").click(function(event) {
+            $("#page-content").wordExport();
+        });
+    });
+</script> 
+<script type="text/javascript">
+function showInput() {
+	for (var i=1; i < 47; i++) {
+		var message_entered =  document.getElementById("field5_" + i.toString()).value;
+		document.getElementById("answer5_" + i.toString()).innerHTML = message_entered;
+	}	
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+      	    $("body").fadeIn(300);
+	
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(300, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}    
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#back-top").hide();
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-top').fadeIn();
+				} else {
+					$('#back-top').fadeOut();
+				}
+			});
+			
+			$('#back-top a').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+	});
+</script>
+<script>
+	var txt=document.getElementById("txt");
+	txt.value=sessionStorage["txt"] || "?";
+	window.go=function(){
+			 sessionStorage["txt"]=txt.value;
+	}
+</script>
+<script>
+	// помнить введенные поля
+	function dotest(){
+		/*
+		// отладка
+		for (var i=1; i < 47; i++) {
+			document.getElementById("field5_" + i.toString()).value = "Ответ" + i.toString();
+		}	
+		*/
+		// помнить checkbox
+		$(function () {
+			var data = localStorage.getItem("showning");
+			if (data !== null) {
+				$("input[name='checkbox']").attr("checked", "checked");
+			}
+		});
+
+		$("input[name='checkbox']").click(function () {
+			if ($(this).is(":checked")) {
+				localStorage.setItem("showning", 1);
+			} else {
+				localStorage.removeItem("showning");
+			}
+		});
+	
+		// всего 46 полей
+		var field5_1 = document.getElementById('field5_1');
+		if (localStorage.field5_1){
+			 field5_1.value = localStorage.field5_1;
+		}
+		field5_1.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_1 = field5_1.value;
+		}, false);
+
+		var field5_2 = document.getElementById('field5_2');
+		if (localStorage.field5_2){
+			 field5_2.value = localStorage.field5_2;
+		}
+		field5_2.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_2 = field5_2.value;
+		}, false);
+
+		var field5_3 = document.getElementById('field5_3');
+		if (localStorage.field5_3){
+			 field5_3.value = localStorage.field5_3;
+		}
+		field5_3.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_3 = field5_3.value;
+		}, false);
+
+		var field5_4 = document.getElementById('field5_4');
+		if (localStorage.field5_4){
+			 field5_4.value = localStorage.field5_4;
+		}
+		field5_4.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_4 = field5_4.value;
+		}, false);
+
+		var field5_5 = document.getElementById('field5_5');
+		if (localStorage.field5_5){
+			 field5_5.value = localStorage.field5_5;
+		}
+		field5_5.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_5 = field5_5.value;
+		}, false);
+
+		var field5_6 = document.getElementById('field5_6');
+		if (localStorage.field5_6){
+			 field5_6.value = localStorage.field5_6;
+		}
+		field5_6.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_6 = field5_6.value;
+		}, false);
+
+		var field5_7 = document.getElementById('field5_7');
+		if (localStorage.field5_7){
+			 field5_7.value = localStorage.field5_7;
+		}
+		field5_7.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_7 = field5_7.value;
+		}, false);
+
+		var field5_8 = document.getElementById('field5_8');
+		if (localStorage.field5_8){
+			 field5_8.value = localStorage.field5_8;
+		}
+		field5_8.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_8 = field5_8.value;
+		}, false);
+
+		var field5_9 = document.getElementById('field5_9');
+		if (localStorage.field5_9){
+			 field5_9.value = localStorage.field5_9;
+		}
+		field5_9.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_9 = field5_9.value;
+		}, false);
+
+		var field5_10 = document.getElementById('field5_10');
+		if (localStorage.field5_10){
+			 field5_10.value = localStorage.field5_10;
+		}
+		field5_10.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_10 = field5_10.value;
+		}, false);
+
+		var field5_11 = document.getElementById('field5_11');
+		if (localStorage.field5_11){
+			 field5_11.value = localStorage.field5_11;
+		}
+		field5_11.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_11 = field5_11.value;
+		}, false);
+
+		var field5_12 = document.getElementById('field5_12');
+		if (localStorage.field5_12){
+			 field5_12.value = localStorage.field5_12;
+		}
+		field5_12.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_12 = field5_12.value;
+		}, false);
+
+		var field5_13 = document.getElementById('field5_13');
+		if (localStorage.field5_13){
+			 field5_13.value = localStorage.field5_13;
+		}
+		field5_13.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_13 = field5_13.value;
+		}, false);
+
+		var field5_14 = document.getElementById('field5_14');
+		if (localStorage.field5_14){
+			 field5_14.value = localStorage.field5_14;
+		}
+		field5_14.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_14 = field5_14.value;
+		}, false);
+
+		var field5_15 = document.getElementById('field5_15');
+		if (localStorage.field5_15){
+			 field5_15.value = localStorage.field5_15;
+		}
+		field5_15.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_15 = field5_15.value;
+		}, false);
+
+		var field5_16 = document.getElementById('field5_16');
+		if (localStorage.field5_16){
+			 field5_16.value = localStorage.field5_16;
+		}
+		field5_16.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_16 = field5_16.value;
+		}, false);
+
+		var field5_17 = document.getElementById('field5_17');
+		if (localStorage.field5_17){
+			 field5_17.value = localStorage.field5_17;
+		}
+		field5_17.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_17 = field5_17.value;
+		}, false);
+
+		var field5_18 = document.getElementById('field5_18');
+		if (localStorage.field5_18){
+			 field5_18.value = localStorage.field5_18;
+		}
+		field5_18.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_18 = field5_18.value;
+		}, false);
+
+		var field5_19 = document.getElementById('field5_19');
+		if (localStorage.field5_19){
+			 field5_19.value = localStorage.field5_19;
+		}
+		field5_19.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_19 = field5_19.value;
+		}, false);
+
+		var field5_20 = document.getElementById('field5_20');
+		if (localStorage.field5_20){
+			 field5_20.value = localStorage.field5_20;
+		}
+		field5_20.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_20 = field5_20.value;
+		}, false);
+
+		var field5_21 = document.getElementById('field5_21');
+		if (localStorage.field5_21){
+			 field5_21.value = localStorage.field5_21;
+		}
+		field5_21.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_21 = field5_21.value;
+		}, false);
+
+		var field5_22 = document.getElementById('field5_22');
+		if (localStorage.field5_22){
+			 field5_22.value = localStorage.field5_22;
+		}
+		field5_22.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_22 = field5_22.value;
+		}, false);
+
+		var field5_23 = document.getElementById('field5_23');
+		if (localStorage.field5_23){
+			 field5_23.value = localStorage.field5_23;
+		}
+		field5_23.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_23 = field5_23.value;
+		}, false);
+
+		var field5_24 = document.getElementById('field5_24');
+		if (localStorage.field5_24){
+			 field5_24.value = localStorage.field5_24;
+		}
+		field5_24.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_24 = field5_24.value;
+		}, false);
+
+		var field5_25 = document.getElementById('field5_25');
+		if (localStorage.field5_25){
+			 field5_25.value = localStorage.field5_25;
+		}
+		field5_25.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_25 = field5_25.value;
+		}, false);
+
+		var field5_26 = document.getElementById('field5_26');
+		if (localStorage.field5_26){
+			 field5_26.value = localStorage.field5_26;
+		}
+		field5_26.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_26 = field5_26.value;
+		}, false);
+
+		var field5_27 = document.getElementById('field5_27');
+		if (localStorage.field5_27){
+			 field5_27.value = localStorage.field5_27;
+		}
+		field5_27.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_27 = field5_27.value;
+		}, false);
+
+		var field5_28 = document.getElementById('field5_28');
+		if (localStorage.field5_28){
+			 field5_28.value = localStorage.field5_28;
+		}
+		field5_28.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_28 = field5_28.value;
+		}, false);
+
+		var field5_29 = document.getElementById('field5_29');
+		if (localStorage.field5_29){
+			 field5_29.value = localStorage.field5_29;
+		}
+		field5_29.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_29 = field5_29.value;
+		}, false);
+
+		var field5_30 = document.getElementById('field5_30');
+		if (localStorage.field5_30){
+			 field5_30.value = localStorage.field5_30;
+		}
+		field5_30.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_30 = field5_30.value;
+		}, false);
+
+		var field5_31 = document.getElementById('field5_31');
+		if (localStorage.field5_31){
+			 field5_31.value = localStorage.field5_31;
+		}
+		field5_31.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_31 = field5_31.value;
+		}, false);
+
+		var field5_32 = document.getElementById('field5_32');
+		if (localStorage.field5_32){
+			 field5_32.value = localStorage.field5_32;
+		}
+		field5_32.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_32 = field5_32.value;
+		}, false);
+
+		var field5_33 = document.getElementById('field5_33');
+		if (localStorage.field5_33){
+			 field5_33.value = localStorage.field5_33;
+		}
+		field5_33.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_33 = field5_33.value;
+		}, false);
+
+		var field5_34 = document.getElementById('field5_34');
+		if (localStorage.field5_34){
+			 field5_34.value = localStorage.field5_34;
+		}
+		field5_34.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_34 = field5_34.value;
+		}, false);
+
+		var field5_35 = document.getElementById('field5_35');
+		if (localStorage.field5_35){
+			 field5_35.value = localStorage.field5_35;
+		}
+		field5_35.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_35 = field5_35.value;
+		}, false);
+
+		var field5_36 = document.getElementById('field5_36');
+		if (localStorage.field5_36){
+			 field5_36.value = localStorage.field5_36;
+		}
+		field5_36.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_36 = field5_36.value;
+		}, false);
+
+		var field5_37 = document.getElementById('field5_37');
+		if (localStorage.field5_37){
+			 field5_37.value = localStorage.field5_37;
+		}
+		field5_37.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_37 = field5_37.value;
+		}, false);
+
+		var field5_38 = document.getElementById('field5_38');
+		if (localStorage.field5_38){
+			 field5_38.value = localStorage.field5_38;
+		}
+		field5_38.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_38 = field5_38.value;
+		}, false);
+
+		var field5_39 = document.getElementById('field5_39');
+		if (localStorage.field5_39){
+			 field5_39.value = localStorage.field5_39;
+		}
+		field5_39.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_39 = field5_39.value;
+		}, false);
+
+		var field5_40 = document.getElementById('field5_40');
+		if (localStorage.field5_40){
+			 field5_40.value = localStorage.field5_40;
+		}
+		field5_40.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_40 = field5_40.value;
+		}, false);
+
+		var field5_41 = document.getElementById('field5_41');
+		if (localStorage.field5_41){
+			 field5_41.value = localStorage.field5_41;
+		}
+		field5_41.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_41 = field5_41.value;
+		}, false);
+
+		var field5_42 = document.getElementById('field5_42');
+		if (localStorage.field5_42){
+			 field5_42.value = localStorage.field5_42;
+		}
+		field5_42.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_42 = field5_42.value;
+		}, false);
+
+		var field5_43 = document.getElementById('field5_43');
+		if (localStorage.field5_43){
+			 field5_43.value = localStorage.field5_43;
+		}
+		field5_43.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_43 = field5_43.value;
+		}, false);
+
+		var field5_44 = document.getElementById('field5_44');
+		if (localStorage.field5_44){
+			 field5_44.value = localStorage.field5_44;
+		}
+		field5_44.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_44 = field5_44.value;
+		}, false);
+
+		var field5_45 = document.getElementById('field5_45');
+		if (localStorage.field5_45){
+			 field5_45.value = localStorage.field5_45;
+		}
+		field5_45.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_45 = field5_45.value;
+		}, false);
+
+		var field5_46 = document.getElementById('field5_46');
+		if (localStorage.field5_46){
+			 field5_46.value = localStorage.field5_46;
+		}
+		field5_46.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field5_46 = field5_46.value;
+		}, false);
+	}
+</script>
+<script>
+	// очистить поля
+	function clearfield5_(){
+		for (var i=1; i < 47; i++) {
+			document.getElementById("field5_" + i.toString()).value = "";
+		}	
+	}
+</script>
+<script>
+	// очистить localStorage
+	function clearLocalStorage(){
+		localStorage.clear();
+	}
+</script>

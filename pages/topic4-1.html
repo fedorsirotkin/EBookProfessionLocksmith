@@ -1,0 +1,149 @@
+<script type="text/javascript">
+	// для плавной смены контента
+    $(document).ready(function() {
+      	$("body").css("display", "none");
+    });
+</script>
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" type="image/ico" href="../images/favicon.png"/>
+  <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+	МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник» | Электронный учебник 
+  </title>
+  <link href="../css/mystylecontent.css" rel="stylesheet">
+  <!-- подключение локальной базы данных -->
+  <!-- <script type="text/javascript" src="../js/localdb.js"></script> -->
+ </head>
+ <body>
+	<div class="class">
+		<div id="back-top"><a href="#top"><img src="../images/uparrow.png" style="width: 50px; height: 80px;" alt=""></a></div>
+	</div>
+	<div id="head">
+		<a href="../index.html">На главную</a>
+		<a href="content.html">Содержание</a>
+	</div> 
+	<div id="article">
+		<div class="parent">
+			<div class="child">
+				<h1 class="boxShadow10">ПРАВКА И РИХТОВКА МЕТАЛЛА. ОСНОВНЫЕ СВЕДЕНИЯ</h1>	
+				<br>					
+				<div id="block">
+					<h2>ПРАВКА И РИХТОВКА МЕТАЛЛА</h2>
+				</div>
+				<img src="../images/arrow_down.png" alt="" class="imgcontent">
+				<div id="block">
+					<p>
+						Представляют собой операции по выправке металла, заготовок и деталей, имеющих вмятины, выпучины, волнистость, коробление, искривление и др.
+					</p>
+				</div>
+				<img src="../images/arrow_down.png" alt="" class="imgcontent">		
+				<div id="block">
+					<p>
+						<strong>Правка</strong> – слесарная операция при помощи которой устраняются неровности
+						и другие недостатки формы заготовки
+					</p>
+				</div>	
+				<img src="../images/arrow_down.png" alt="" class="imgcontent">
+				<div id="block">
+					<h2>СПОСОБЫ ПРАВКИ:</h2>
+				</div>	
+				<img src="../images/arrow_left_right.png" alt="" style="margin-top: 10px; margin-bottom: 10px; width: 35%; height: 6%;">
+				<div class="container">
+				  <div class="box">
+					<div id="block2">
+						<p>
+							<span class="bold">В холодном состоянии</span><br>
+						</p>
+					</div>	
+					<div id="block2">
+						<p>
+							<span class="bold">В горячем состоянии</span><br>
+						</p>
+					</div>	  
+				  </div>
+				</div>
+				<div class="box">				
+					<p style="text-align: center;">Выбор способа зависит от прогиба, размеров и материала изделия.</p>	
+				</div>
+				<img src="../images/arrow_down.png" alt="" class="imgcontent">	
+				<div id="block">
+					<h2>ПРАВКА МОЖЕТ ВЫПОЛНЯТЬСЯ:</h2>
+				</div>	
+				<img src="../images/arrow_left_right.png" alt="" style="margin-top: 10px; margin-bottom: 10px; width: 35%; height: 6%;">
+				<div class="container">
+				  <div class="box">
+					<div id="block2">
+						<p>
+							<span class="bold">Ручным способом</span><br><br>
+							<strong>НА СТАЛЬНОЙ ИЛИ ЧУГУННОЙ ПЛИТЕ.</strong>
+							<img src="../images/topic4-1-1.png" alt="" tabindex="0" style="margin-top: 10px;">
+							<img src="../images/topic4-1-2.png" alt="" tabindex="0" style="margin-top: 10px;">
+						</p>
+					</div>	
+					<div id="block2">
+						<p>
+							<span class="bold">Машинным способом</span><br><br>
+							<strong>НА ПРАВИЛЬНЫХ ПАЛЬЦАХ ИЛИ ПРЕССАХ.</strong>
+							<img src="../images/topic4-1-3.png" alt="" tabindex="0" style="margin-top: 10px;">
+							<img src="../images/topic4-1-4.png" alt="" tabindex="0" style="margin-top: 10px;">							
+						</p>
+					</div>	  
+				  </div>
+				  <img src="../images/arrow_down.png" alt="" class="imgcontent">	
+				<div id="block">
+					<p>
+						<strong>Рихтовка</strong> – это правка закалённого металла
+					</p>
+				</div>					  
+				</div>
+				<br>				
+			</div>
+		</div>
+    </div>
+	<div id="bottom">
+		<a href="content.html" class="buttons"><button class="button">К содержанию<span class="buttonhelp">Перейти к перечню заголовков</span></button></a>
+		<a href="topic4-2.html" class="buttons"><button class="button">Далее<span class="buttonhelp">Инструменты</span></button></a>	
+		<hr><p>МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник»</p>
+	</div> 	
+ </body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+      	    $("body").fadeIn(300);
+	
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(300, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}    
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#back-top").hide();
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-top').fadeIn();
+				} else {
+					$('#back-top').fadeOut();
+				}
+			});
+			
+			$('#back-top a').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+	});
+</script>

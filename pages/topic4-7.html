@@ -1,0 +1,507 @@
+<script type="text/javascript">
+	// для плавной смены контента
+    $(document).ready(function() {
+      	$("body").css("display", "none");
+    });
+</script>
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" type="image/ico" href="../images/favicon.png"/>
+  <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script> 
+  <script type="text/javascript" src="../js/FileSaver.js"></script> 
+  <script type="text/javascript" src="../js/jquery.wordexport.js"></script> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+	МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник» | Электронный учебник 
+  </title>
+  <link href="../css/mystylecontent.css" rel="stylesheet">
+  <!-- подключение локальной базы данных -->
+  <!-- <script type="text/javascript" src="../js/localdb.js"></script> -->
+ </head>
+ <body onload="dotest(); showInput();">
+	<div class="class">
+		<div id="back-top"><a href="#top"><img src="../images/uparrow.png" style="width: 50px; height: 80px;" alt=""></a></div>
+	</div>
+	<div id="head">
+		<a href="../index.html">На главную</a>
+		<a href="content.html">Содержание</a>
+	</div> 
+	<div id="article">
+		<div class="parent">
+			<div class="child">
+				<h1 class="boxShadow10">ПРОВЕРКА СТЕПЕНИ УСВОЕНИЯ МАТЕРИАЛА: КОНТРОЛЬНАЯ РАБОТА ПО ТЕМЕ "ПРАВКА И РИХТОВКА МЕТАЛЛА"</h1>
+				<p style="text-align: center;">
+					<input name="checkbox" id="checkbox" type="checkbox" class="checkbox" onclick="">
+					<label for="checkbox">хранить историю введенных данных</label>		
+				</p>
+				<p>	
+					<table>
+						<tr>
+							<td class="control_work_td" style="width: 20%;">
+								&nbsp;Ф. И. студента:
+							</td>
+							<td class="control_work_td">
+								<input id="field4_1" type="text" placeholder="Ф.И. студента" onchange="showInput();" class="control_work_input">
+							</td>
+						</tr>
+						<tr>
+							<td class="control_work_td">
+								&nbsp;№ группы:
+							</td>
+							<td class="control_work_td">
+								<input id="field4_2" type="text" placeholder="Номер группы" onchange="showInput();" class="control_work_input">				
+							</td>					
+						</tr>
+					</table>					
+				</p>
+				<p><strong>Задание: Письменно дайте ответы на вопросы.</strong></p>
+				<p>1. Каково назначение правки?<br>
+				<textarea id="field4_3" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>2. Виды правки:<br>			
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 10%;">
+							&nbsp;&nbsp;&nbsp;а)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field4_4" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;б)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field4_5" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>				
+				</table></p>
+				<p>3. Перечислите виды и назначения молотков при правке:<br>
+				<table>
+					<tr>
+						<td class="control_work_td" style="text-align: center;">
+							<input id="field4_6" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input" style="width: 100%; padding-left: 0px;">							
+						</td>
+						<td class="control_work_td" style="text-align: center;">
+							<input id="field4_7" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input" style="width: 100%; padding-left: 0px;">							
+						</td>
+						<td class="control_work_td" style="text-align: center;">
+							<input id="field4_8" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input" style="width: 100%; padding-left: 0px;">							
+						</td>	
+						<td class="control_work_td" style="text-align: center;">
+							<input id="field4_9" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input" style="width: 100%; padding-left: 0px;">							
+						</td>							
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							<textarea id="field4_10" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+						<td class="control_work_td">
+							<textarea id="field4_11" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+						<td class="control_work_td">
+							<textarea id="field4_12" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+						<td class="control_work_td">
+							<textarea id="field4_13" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>							
+					</tr>						
+				</table>				
+				</p>
+				<p>4. Приспособления:<br>			
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 10%;">
+							&nbsp;&nbsp;&nbsp;4.1) &nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field4_14" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;4.2) &nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field4_15" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>				
+				</table></p>	
+				<p>5. В какой последовательности выполняют правку:<br>			
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 30%;">
+							&nbsp;&nbsp;&nbsp;а) полосового металла&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field4_16" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;б) листового металла&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field4_17" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>				
+						</td>					
+					</tr>		
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;в) пруткового металла&nbsp;
+						</td>
+						<td class="control_work_td">
+							<textarea id="field4_18" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>				
+						</td>					
+					</tr>					
+				</table></p>
+				<p>6. Перечислите способы контроля правки:<br>
+				<textarea id="field4_19" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>7. Рихтовка – это ...<br>
+				<textarea id="field4_20" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>8. Отличие правки от рихтовки:<br>
+				<textarea id="field4_21" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>				
+				<!-- Отладка экспорта - Начало -->
+				<div id="page-content" style="display: none;">
+					<p style="text-align: center; font-size: 16pt;">
+							<strong>
+								Контрольная работа по теме<br> "Правка и рихтовка металла"
+							</strong>
+					</p>
+					<p style="text-indent: 0px;">
+						Ф. И. студента: &nbsp;<span id="answer4_1"></span>
+						<br>№ группы: &nbsp;<span id="answer4_2"></span>					
+					</p>
+					<p>
+						Задание: Письменно дайте ответы на вопросы.
+					</p>
+					<!-- Контент для экспорта -->
+					<p>
+						1. Каково назначение правки?
+						<br><span id="answer4_3"></span>
+					</p>
+					<p>
+						2. Виды правки:
+						<br>а) <span id="answer4_4"></span>
+						<br>б) <span id="answer4_5"></span>
+					</p>
+					<p>
+						3. Перечислите виды и назначения молотков при правке:
+						<br>а) <span id="answer4_6"></span>
+						<br><span id="answer4_7"></span>
+						<br>б) <span id="answer4_8"></span>
+						<br><span id="answer4_9"></span>
+						<br>в) <span id="answer4_10"></span>
+						<br><span id="answer4_11"></span>
+						<br>г) <span id="answer4_12"></span>
+						<br><span id="answer4_13"></span>
+					</p>
+					<p>
+						4. Приспособления:
+						<br>1 - <span id="answer4_14"></span>
+						<br>2 - <span id="answer4_15"></span>
+					</p>
+					<p>
+						5. В какой последовательности выполняют правку:
+						<br>а) полосового металла
+						<br><span id="answer4_16"></span>
+						<br>б) листового металла
+						<br><span id="answer4_17"></span>
+						<br>в) пруткового металла 
+						<br><span id="answer4_18"></span>
+					</p>
+					<p>
+						6. Перечислите способы контроля правки:
+						<br><span id="answer4_19"></span>
+					</p>
+					<p>
+						7. Рихтовка - это ...
+						<br><span id="answer4_20"></span>
+					</p>
+					<p>
+						8. Отличие правки от рихтовки
+						<br><span id="answer4_21"></span>
+					</p>
+				</div>
+				<!-- Отладка экспорта - Конец -->				
+				<a class="word-export buttons" href="javascript:void(0);"><button class="button word-export" onclick="">Сохранить результаты<span class="buttonhelp">Сохранить работу в формате *.doc</span></button></a> 
+				<a class="buttons"><button class="button" onclick="clearfield4_(); clearLocalStorage();">Очистить все поля<span class="buttonhelp">Стереть данные и историю из всех полей</span></button></a> 			
+			</div>
+		</div>
+	</div>
+	<div id="bottom">
+		<a href="../tests/topic4_6/show.html" class="buttons"><button class="button">Назад<span class="buttonhelp">Промежуточный тест</span></button></a>	
+		<a href="content.html" class="buttons"><button class="button">К содержанию<span class="buttonhelp">Перейти к перечню заголовков</span></button></a>	
+		<hr><p>МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник»</p>
+	</div> 	
+ </body>
+</html>
+<script>
+	//html-to-doc
+    jQuery(document).ready(function($) {
+
+        $("a.word-export").click(function(event) {
+            $("#page-content").wordExport();
+        });
+    });
+</script> 
+<script type="text/javascript">
+function showInput() {
+	for (var i=1; i < 22; i++) {
+		var message_entered =  document.getElementById("field4_" + i.toString()).value;
+		document.getElementById("answer4_" + i.toString()).innerHTML = message_entered;
+	}	
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+      	    $("body").fadeIn(300);
+	
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(300, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}    
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#back-top").hide();
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-top').fadeIn();
+				} else {
+					$('#back-top').fadeOut();
+				}
+			});
+			
+			$('#back-top a').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+	});
+</script>
+<script>
+	var txt=document.getElementById("txt");
+	txt.value=sessionStorage["txt"] || "?";
+	window.go=function(){
+			 sessionStorage["txt"]=txt.value;
+	}
+</script>
+<script>
+	// помнить введенные поля
+	function dotest(){
+		/*
+		// отладка
+		for (var i=1; i < 22; i++) {
+			document.getElementById("field4_" + i.toString()).value = "Ответ" + i.toString();
+		}	
+		*/
+		// помнить checkbox
+		$(function () {
+			var data = localStorage.getItem("showning");
+			if (data !== null) {
+				$("input[name='checkbox']").attr("checked", "checked");
+			}
+		});
+
+		$("input[name='checkbox']").click(function () {
+			if ($(this).is(":checked")) {
+				localStorage.setItem("showning", 1);
+			} else {
+				localStorage.removeItem("showning");
+			}
+		});
+	
+		// всего 19 полей
+		var field4_1 = document.getElementById('field4_1');
+		if (localStorage.field4_1){
+			 field4_1.value = localStorage.field4_1;
+		}
+		field4_1.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_1 = field4_1.value;
+		}, false);
+
+		var field4_2 = document.getElementById('field4_2');
+		if (localStorage.field4_2){
+			 field4_2.value = localStorage.field4_2;
+		}
+		field4_2.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_2 = field4_2.value;
+		}, false);
+
+		var field4_3 = document.getElementById('field4_3');
+		if (localStorage.field4_3){
+			 field4_3.value = localStorage.field4_3;
+		}
+		field4_3.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_3 = field4_3.value;
+		}, false);
+
+		var field4_4 = document.getElementById('field4_4');
+		if (localStorage.field4_4){
+			 field4_4.value = localStorage.field4_4;
+		}
+		field4_4.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_4 = field4_4.value;
+		}, false);
+
+		var field4_5 = document.getElementById('field4_5');
+		if (localStorage.field4_5){
+			 field4_5.value = localStorage.field4_5;
+		}
+		field4_5.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_5 = field4_5.value;
+		}, false);
+
+		var field4_6 = document.getElementById('field4_6');
+		if (localStorage.field4_6){
+			 field4_6.value = localStorage.field4_6;
+		}
+		field4_6.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_6 = field4_6.value;
+		}, false);
+
+		var field4_7 = document.getElementById('field4_7');
+		if (localStorage.field4_7){
+			 field4_7.value = localStorage.field4_7;
+		}
+		field4_7.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_7 = field4_7.value;
+		}, false);
+
+		var field4_8 = document.getElementById('field4_8');
+		if (localStorage.field4_8){
+			 field4_8.value = localStorage.field4_8;
+		}
+		field4_8.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_8 = field4_8.value;
+		}, false);
+
+		var field4_9 = document.getElementById('field4_9');
+		if (localStorage.field4_9){
+			 field4_9.value = localStorage.field4_9;
+		}
+		field4_9.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_9 = field4_9.value;
+		}, false);
+
+		var field4_10 = document.getElementById('field4_10');
+		if (localStorage.field4_10){
+			 field4_10.value = localStorage.field4_10;
+		}
+		field4_10.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_10 = field4_10.value;
+		}, false);
+
+		var field4_11 = document.getElementById('field4_11');
+		if (localStorage.field4_11){
+			 field4_11.value = localStorage.field4_11;
+		}
+		field4_11.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_11 = field4_11.value;
+		}, false);
+
+		var field4_12 = document.getElementById('field4_12');
+		if (localStorage.field4_12){
+			 field4_12.value = localStorage.field4_12;
+		}
+		field4_12.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_12 = field4_12.value;
+		}, false);
+
+		var field4_13 = document.getElementById('field4_13');
+		if (localStorage.field4_13){
+			 field4_13.value = localStorage.field4_13;
+		}
+		field4_13.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_13 = field4_13.value;
+		}, false);
+
+		var field4_14 = document.getElementById('field4_14');
+		if (localStorage.field4_14){
+			 field4_14.value = localStorage.field4_14;
+		}
+		field4_14.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_14 = field4_14.value;
+		}, false);
+
+		var field4_15 = document.getElementById('field4_15');
+		if (localStorage.field4_15){
+			 field4_15.value = localStorage.field4_15;
+		}
+		field4_15.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_15 = field4_15.value;
+		}, false);
+
+		var field4_16 = document.getElementById('field4_16');
+		if (localStorage.field4_16){
+			 field4_16.value = localStorage.field4_16;
+		}
+		field4_16.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_16 = field4_16.value;
+		}, false);
+
+		var field4_17 = document.getElementById('field4_17');
+		if (localStorage.field4_17){
+			 field4_17.value = localStorage.field4_17;
+		}
+		field4_17.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_17 = field4_17.value;
+		}, false);
+
+		var field4_18 = document.getElementById('field4_18');
+		if (localStorage.field4_18){
+			 field4_18.value = localStorage.field4_18;
+		}
+		field4_18.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_18 = field4_18.value;
+		}, false);
+
+		var field4_19 = document.getElementById('field4_19');
+		if (localStorage.field4_19){
+			 field4_19.value = localStorage.field4_19;
+		}
+		field4_19.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_19 = field4_19.value;
+		}, false);
+		var field4_20 = document.getElementById('field4_20');
+		if (localStorage.field4_20){
+			 field4_20.value = localStorage.field4_20;
+		}
+		field4_20.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_20 = field4_20.value;
+		}, false);
+
+		var field4_21 = document.getElementById('field4_21');
+		if (localStorage.field4_21){
+			 field4_21.value = localStorage.field4_21;
+		}
+		field4_21.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field4_21 = field4_21.value;
+		}, false);
+	}
+</script>
+<script>
+	// очистить поля
+	function clearfield4_(){
+		for (var i=1; i < 22; i++) {
+			document.getElementById("field4_" + i.toString()).value = "";
+		}	
+	}
+</script>
+<script>
+	// очистить localStorage
+	function clearLocalStorage(){
+		localStorage.clear();
+	}
+</script>

@@ -1,0 +1,446 @@
+<script type="text/javascript">
+	// для плавной смены контента
+    $(document).ready(function() {
+      	$("body").css("display", "none");
+    });
+</script>
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" type="image/ico" href="../images/favicon.png"/>
+  <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script> 
+  <script type="text/javascript" src="../js/FileSaver.js"></script> 
+  <script type="text/javascript" src="../js/jquery.wordexport.js"></script> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+	МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник» | Электронный учебник 
+  </title>
+  <link href="../css/mystylecontent.css" rel="stylesheet">
+  <!-- подключение локальной базы данных -->
+  <!-- <script type="text/javascript" src="../js/localdb.js"></script> -->
+ </head>
+ <body onload="dotest(); showInput();">
+	<div class="class">
+		<div id="back-top"><a href="#top"><img src="../images/uparrow.png" style="width: 50px; height: 80px;" alt=""></a></div>
+	</div>
+	<div id="head">
+		<a href="../index.html">На главную</a>
+		<a href="content.html">Содержание</a>
+	</div> 
+	<div id="article">
+		<div class="parent">
+			<div class="child">
+				<h1 class="boxShadow10">ПРОВЕРКА СТЕПЕНИ УСВОЕНИЯ МАТЕРИАЛА: КОНТРОЛЬНАЯ РАБОТА ПО ТЕМЕ "ГИБКА МЕТАЛЛА"</h1>			
+				<p style="text-align: center;">
+					<input name="checkbox" id="checkbox" type="checkbox" class="checkbox" onclick="">
+					<label for="checkbox">хранить историю введенных данных</label>		
+				</p>
+				<p>	
+					<table>
+						<tr>
+							<td class="control_work_td" style="width: 20%;">
+								&nbsp;Ф. И. студента:
+							</td>
+							<td class="control_work_td">
+								<input id="field3_1" type="text" placeholder="Ф.И. студента" onchange="showInput();" class="control_work_input">
+							</td>
+						</tr>
+						<tr>
+							<td class="control_work_td">
+								&nbsp;№ группы:
+							</td>
+							<td class="control_work_td">
+								<input id="field3_2" type="text" placeholder="Номер группы" onchange="showInput();" class="control_work_input">				
+							</td>					
+						</tr>
+					</table>					
+				</p>
+				<p><strong>Задание: Письменно дайте ответы на вопросы.</strong></p>
+				<p>1. Дайте определение гибке: <br>
+				<textarea id="field3_3" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>2. Определите длину заготовки для изготовления угольника из полосы толщиной 5 мм с длиной прямоугольных участков соответственно 50 и 80 мм и радиусом закругления 4 мм (гибка по плоскости).<br>
+				<textarea id="field3_4" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>3. Укажите вид наполнителя для гибки труб:<br></p>				
+				<table>
+					<tr>
+						<td class="control_work_td_padding">материал трубы</td>
+						<td class="control_work_td_padding">диаметр трубы, мм</td>
+						<td class="control_work_td_padding">радиус гибки, мм</td>
+						<td class="control_work_td_padding">способ гибки</td>
+						<td class="control_work_td_padding">наполнитель</td>
+					</tr>
+					<tr>
+						<td rowspan="4" class="control_work_td_padding">сталь отожженная</td>
+						<td class="control_work_td_padding">до 10</td>
+						<td class="control_work_td_padding">50...200</td>
+						<td class="control_work_td_padding">холодный</td>
+						<td rowspan="2" class="control_work_td_padding"><input id="field3_5" type="text" placeholder="Ваш ответ" onchange="showInput();" class="control_work_input"></td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="control_work_td_padding">10...30</td>
+						<td rowspan="3" class="control_work_td_padding">более 200</td>
+						<td class="control_work_td_padding">холодный</td>
+					</tr>
+					<tr>
+						<td class="control_work_td_padding">горячий</td>
+						<td class="control_work_td_padding"><input id="field3_6" type="text" placeholder="Ваш ответ" onchange="showInput();" class="control_work_input"></td>
+					</tr>
+					<tr>
+						<td class="control_work_td_padding">более 30</td>
+						<td class="control_work_td_padding">горячий</td>
+						<td class="control_work_td_padding"><input id="field3_7" type="text" placeholder="Ваш ответ" onchange="showInput();" class="control_work_input"></td>
+					</tr>
+					<tr>
+						<td class="control_work_td_padding">медь</td>
+						<td class="control_work_td_padding">любой</td>
+						<td class="control_work_td_padding">до 100</td>
+						<td class="control_work_td_padding">холодный</td>
+						<td class="control_work_td_padding"><input id="field3_8" type="text" placeholder="Ваш ответ" onchange="showInput();" class="control_work_input"></td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="control_work_td_padding">латунь отожженная</td>
+						<td rowspan="2" class="control_work_td_padding">свыше 10</td>
+						<td rowspan="2" class="control_work_td_padding">до 100</td>
+						<td class="control_work_td_padding">холодный</td>
+						<td class="control_work_td_padding"><input id="field3_9" type="text" placeholder="Ваш ответ" onchange="showInput();" class="control_work_input"></td>
+					</tr>
+					<tr>
+						<td class="control_work_td_padding">горячий</td>
+						<td class="control_work_td_padding"><input id="field3_10" type="text" placeholder="Ваш ответ" onchange="showInput();" class="control_work_input">
+</td>
+					</tr>
+				</table>
+				<br>
+				<p>4. Выберите наполнитель для предотвращения смятия, выпучивания и трещин при гибке.<br>
+				а) стальных труб в горячем состоянии <br>
+				<textarea id="field3_11" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea>
+				б) стальных труб в холодном состоянии <br>
+				<textarea id="field3_12" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea>
+				в) медных и латунных труб <br>
+				<textarea id="field3_13" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>5. Укажите длину нагреваемого участка при гибке трубы: <br>		
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 30%;">
+							&nbsp;Угол изгиба трубы, &deg;&nbsp;
+						</td>
+						<td class="control_work_td">
+							&nbsp;Длина нагреваемого участка трубы&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;90&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field3_14" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;60&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field3_15" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;45&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field3_16" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+				</table></p>				
+				<!-- Отладка экспорта - Начало -->
+				<div id="page-content" style="display: none;">
+					<p style="text-align: center; font-size: 16pt;">
+							<strong>
+								Контрольная работа по теме<br> "Гибка металла"
+							</strong>
+					</p>
+					<p style="text-indent: 0px;">
+						Ф. И. студента: &nbsp;<span id="answer3_1"></span>
+						<br>№ группы: &nbsp;<span id="answer3_2"></span>					
+					</p>
+					<p>
+						Задание: Письменно дайте ответы на вопросы.
+					</p>
+					<!-- Контент для экспорта -->	
+					<p>
+						1. Дайте определение гибке – 
+						<br><span id="answer3_3"></span>
+					</p>
+					<p>
+						2. Определите длину заготовки для изготовления угольника из полосы толщиной 5 мм с длиной прямоугольных участков соответственно 50 и 80 мм и радиусом закругления 4 мм (гибка по плоскости).
+						<br><span id="answer3_4"></span>
+					</p>
+					<p>
+						3. Укажите вид наполнителя для гибки труб:
+						<br>1 - <span id="answer3_5"></span>
+						<br>2 - <span id="answer3_6"></span>
+						<br>3 - <span id="answer3_7"></span>
+						<br>4 - <span id="answer3_8"></span>
+						<br>5 - <span id="answer3_9"></span>
+						<br>6 - <span id="answer3_10"></span>
+					</p>
+					<p>
+						4. Выберите наполнитель для предотвращения смятия, выпучивания и трещин при гибке:
+						<br>а) стальных труб в горячем состоянии 
+						<br><span id="answer3_11"></span>
+						<br>б) стальных труб в холодном состоянии
+						<br><span id="answer3_12"></span>
+						<br>в) медных и латунных труб
+						<br><span id="answer3_13"></span>
+					</p>
+					<p>
+						5. Укажите длину нагреваемого участка при гибке трубы:
+						<br>90&deg; - <span id="answer3_14"></span>
+						<br>60&deg; - <span id="answer3_15"></span>
+						<br>45&deg; - <span id="answer3_16"></span>
+					</p>
+				</div>
+				<!-- Отладка экспорта - Конец -->				
+				<a class="word-export buttons" href="javascript:void(0);"><button class="button word-export" onclick="">Сохранить результаты<span class="buttonhelp">Сохранить работу в формате *.doc</span></button></a> 
+				<a class="buttons"><button class="button" onclick="clearfield3_(); clearLocalStorage();">Очистить все поля<span class="buttonhelp">Стереть данные и историю из всех полей</span></button></a> 			
+			</div>
+		</div>
+	</div>
+	<div id="bottom">
+		<a href="../tests/topic3_6/show.html" class="buttons"><button class="button">Назад<span class="buttonhelp">Промежуточный тест</span></button></a>	
+		<a href="content.html" class="buttons"><button class="button">К содержанию<span class="buttonhelp">Перейти к перечню заголовков</span></button></a>	
+		<hr><p>МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник»</p>
+	</div> 	
+ </body>
+</html>
+<script>
+	//html-to-doc
+    jQuery(document).ready(function($) {
+
+        $("a.word-export").click(function(event) {
+            $("#page-content").wordExport();
+        });
+    });
+</script> 
+<script type="text/javascript">
+function showInput() {
+	for (var i=1; i < 17; i++) {
+		var message_entered =  document.getElementById("field3_" + i.toString()).value;
+		document.getElementById("answer3_" + i.toString()).innerHTML = message_entered;
+	}	
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+      	    $("body").fadeIn(300);
+	
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(300, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}    
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#back-top").hide();
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-top').fadeIn();
+				} else {
+					$('#back-top').fadeOut();
+				}
+			});
+			
+			$('#back-top a').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+	});
+</script>
+<script>
+	var txt=document.getElementById("txt");
+	txt.value=sessionStorage["txt"] || "?";
+	window.go=function(){
+			 sessionStorage["txt"]=txt.value;
+	}
+</script>
+<script>
+	// помнить введенные поля
+	function dotest(){
+		/*
+		// отладка
+		for (var i=1; i < 17; i++) {
+			document.getElementById("field3_" + i.toString()).value = "Ответ" + i.toString();
+		}	
+		*/
+		// помнить checkbox
+		$(function () {
+			var data = localStorage.getItem("showning");
+			if (data !== null) {
+				$("input[name='checkbox']").attr("checked", "checked");
+			}
+		});
+
+		$("input[name='checkbox']").click(function () {
+			if ($(this).is(":checked")) {
+				localStorage.setItem("showning", 1);
+			} else {
+				localStorage.removeItem("showning");
+			}
+		});
+	
+		// всего 16 полей
+		var field3_1 = document.getElementById('field3_1');
+		if (localStorage.field3_1){
+			 field3_1.value = localStorage.field3_1;
+		}
+		field3_1.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_1 = field3_1.value;
+		}, false);
+
+		var field3_2 = document.getElementById('field3_2');
+		if (localStorage.field3_2){
+			 field3_2.value = localStorage.field3_2;
+		}
+		field3_2.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_2 = field3_2.value;
+		}, false);
+
+		var field3_3 = document.getElementById('field3_3');
+		if (localStorage.field3_3){
+			 field3_3.value = localStorage.field3_3;
+		}
+		field3_3.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_3 = field3_3.value;
+		}, false);
+
+		var field3_4 = document.getElementById('field3_4');
+		if (localStorage.field3_4){
+			 field3_4.value = localStorage.field3_4;
+		}
+		field3_4.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_4 = field3_4.value;
+		}, false);
+
+		var field3_5 = document.getElementById('field3_5');
+		if (localStorage.field3_5){
+			 field3_5.value = localStorage.field3_5;
+		}
+		field3_5.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_5 = field3_5.value;
+		}, false);
+
+		var field3_6 = document.getElementById('field3_6');
+		if (localStorage.field3_6){
+			 field3_6.value = localStorage.field3_6;
+		}
+		field3_6.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_6 = field3_6.value;
+		}, false);
+
+		var field3_7 = document.getElementById('field3_7');
+		if (localStorage.field3_7){
+			 field3_7.value = localStorage.field3_7;
+		}
+		field3_7.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_7 = field3_7.value;
+		}, false);
+
+		var field3_8 = document.getElementById('field3_8');
+		if (localStorage.field3_8){
+			 field3_8.value = localStorage.field3_8;
+		}
+		field3_8.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_8 = field3_8.value;
+		}, false);
+
+		var field3_9 = document.getElementById('field3_9');
+		if (localStorage.field3_9){
+			 field3_9.value = localStorage.field3_9;
+		}
+		field3_9.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_9 = field3_9.value;
+		}, false);
+
+		var field3_10 = document.getElementById('field3_10');
+		if (localStorage.field3_10){
+			 field3_10.value = localStorage.field3_10;
+		}
+		field3_10.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_10 = field3_10.value;
+		}, false);
+
+		var field3_11 = document.getElementById('field3_11');
+		if (localStorage.field3_11){
+			 field3_11.value = localStorage.field3_11;
+		}
+		field3_11.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_11 = field3_11.value;
+		}, false);
+
+		var field3_12 = document.getElementById('field3_12');
+		if (localStorage.field3_12){
+			 field3_12.value = localStorage.field3_12;
+		}
+		field3_12.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_12 = field3_12.value;
+		}, false);
+
+		var field3_13 = document.getElementById('field3_13');
+		if (localStorage.field3_13){
+			 field3_13.value = localStorage.field3_13;
+		}
+		field3_13.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_13 = field3_13.value;
+		}, false);
+
+		var field3_14 = document.getElementById('field3_14');
+		if (localStorage.field3_14){
+			 field3_14.value = localStorage.field3_14;
+		}
+		field3_14.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_14 = field3_14.value;
+		}, false);
+
+		var field3_15 = document.getElementById('field3_15');
+		if (localStorage.field3_15){
+			 field3_15.value = localStorage.field3_15;
+		}
+		field3_15.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_15 = field3_15.value;
+		}, false);
+
+		var field3_16 = document.getElementById('field3_16');
+		if (localStorage.field3_16){
+			 field3_16.value = localStorage.field3_16;
+		}
+		field3_16.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field3_16 = field3_16.value;
+		}, false);
+	}
+</script>
+<script>
+	// очистить поля
+	function clearfield3_(){
+		for (var i=1; i < 17; i++) {
+			document.getElementById("field3_" + i.toString()).value = "";
+		}	
+	}
+</script>
+<script>
+	// очистить localStorage
+	function clearLocalStorage(){
+		localStorage.clear();
+	}
+</script>

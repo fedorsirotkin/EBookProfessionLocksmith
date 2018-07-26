@@ -1,0 +1,135 @@
+<script type="text/javascript">
+	// для плавной смены контента
+    $(document).ready(function() {
+      	$("body").css("display", "none");
+    });
+</script>
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" type="image/ico" href="../images/favicon.png"/>
+  <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+	МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник» | Электронный учебник 
+  </title>
+  <link href="../css/mystylecontent.css" rel="stylesheet">
+  <!-- подключение локальной базы данных -->
+  <!-- <script type="text/javascript" src="../js/localdb.js"></script> -->
+ </head>
+ <body>
+	<div class="class">
+		<div id="back-top"><a href="#top"><img src="../images/uparrow.png" style="width: 50px; height: 80px;" alt=""></a></div>
+	</div>
+	<div id="head">
+		<a href="../index.html">На главную</a>
+		<a href="content.html">Содержание</a>
+	</div> 
+	<div id="article">
+		<div class="parent">
+			<div class="child">
+				<h1 class="boxShadow10">РАЗМЕТКА. ПРИСПОСОБЛЕНИЯ И ОБОРУДОВАНИЕ</h1>
+				<br>
+				<table>
+					<tr>
+						<th class="widthcell">
+							Рисунки приспособлений  и оборудования
+						</th>
+						<th>
+							Характеристика
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/topic1-4-1.png" style="" alt="" tabindex="0">
+						</td>
+						<td>
+							<strong><u>Разметочная плита</u></strong> – отливается из мелкозернистого серого чугуна на рабочих поверхностях больших плит иногда делают продольные и поперечные канавки (глубиной 2-3мм, шириной 1-2мм) которые образуют равные квадраты. Канавки облегчают установку на плите различных приспособлений.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/topic1-4-2.png" style="" alt="" tabindex="0">
+						</td>
+						<td>
+							<strong><u>Подкладки</u></strong> – служат для обеспечения правильной установки деталей при разметке, а также для предохранения разметочных плит от царапин и забоин.
+							<br> <strong><u>Подкладки бывают: </u></strong>
+							<br> а. плоские
+							<br> б. призматические
+							<br> в. клиновидные
+							<br> <strong><u>Клиновидные подкладки</u></strong> представляют собой два соединения, точно обработанных стальных клина.
+							<br>Размечаемую заготовку устанавливают на верхней поверхности клина – 2. Подъём и опускание заготовки производят вращением винта – 1. Имеется шкала – 3, позволяющая контролировать и регулировать высоту клина (1 деление = 0,1мм).
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/topic1-4-3.png" style="" alt="" tabindex="0">
+						</td>
+						<td>
+							<strong><u>Домкрат</u></strong> – применяют для установки громоздких и тяжёлых заготовок.
+							<br> Они позволяют выверять и регулировать положение размечаемых заготовок по высоте.
+							<br> <strong><u>Домкрат обыкновенный</u></strong> имеет в корпусе винт с прямоугольной резьбой с шаровой, плоской, призматической и роликовой головками.
+							<br> <strong><u>Домкрат роликовый</u></strong> дает возможность не только регулировать положение заготовки по высоте, но и свободно поворачивать её в горизонтальной плоскости, что необходимо при разметке тяжёлых заготовок.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/topic1-4-4.png" style="" alt="" tabindex="0">
+						</td>
+						<td>
+							<strong><u>Заточной станок</u></strong> предназначен для заточки режущего инструмента.
+							<br> Перед заточкой подручник устанавливают как можно ближе к шлифовальному кругу.
+							<br> Зазор между подручником и заточным кругом должен быть не более 2-3мм, чтобы затачиваемый инструмент не мог попасть между кругом и подручником.
+							<br> Заточку лучше всего вести с охлаждением водой, в которую добавляют 5% соды или на мокром круге.							
+						</td>
+					</tr>
+				</table>					
+			</div>
+			<div class="helper"></div>
+		</div>
+    </div>
+	<div id="bottom">
+		<a href="topic1-3.html" class="buttons"><button class="button">Назад<span class="buttonhelp">Инструменты</span></button></a>	
+		<a href="content.html" class="buttons"><button class="button">К содержанию<span class="buttonhelp">Перейти к перечню заголовков</span></button></a>
+		<a href="../tests/topic1_5/show.html" class="buttons"><button class="button">Далее<span class="buttonhelp">Последовательность разметки</span></button></a>	
+		<hr><p>МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник»</p>
+	</div> 	
+ </body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+      	    $("body").fadeIn(300);
+	
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(300, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}    
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#back-top").hide();
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-top').fadeIn();
+				} else {
+					$('#back-top').fadeOut();
+				}
+			});
+			
+			$('#back-top a').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+	});
+</script>

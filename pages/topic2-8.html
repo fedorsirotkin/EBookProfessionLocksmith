@@ -1,0 +1,1071 @@
+<script type="text/javascript">
+	// для плавной смены контента
+    $(document).ready(function() {
+      	$("body").css("display", "none");
+    });
+</script>
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" type="image/ico" href="../images/favicon.png"/>
+  <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script> 
+  <script type="text/javascript" src="../js/FileSaver.js"></script> 
+  <script type="text/javascript" src="../js/jquery.wordexport.js"></script> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+	МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник» | Электронный учебник 
+  </title>
+  <link href="../css/mystylecontent.css" rel="stylesheet">
+  <!-- подключение локальной базы данных -->
+  <!-- <script type="text/javascript" src="../js/localdb.js"></script> -->
+ </head>
+ <body onload="dotest(); showInput();">
+	<div class="class">
+		<div id="back-top"><a href="#top"><img src="../images/uparrow.png" style="width: 50px; height: 80px;" alt=""></a></div>
+	</div>
+	<div id="head">
+		<a href="../index.html">На главную</a>
+		<a href="content.html">Содержание</a>
+	</div> 
+	<div id="article">
+		<div class="parent">
+			<div class="child">
+				<h1 class="boxShadow10">ПРОВЕРКА СТЕПЕНИ УСВОЕНИЯ МАТЕРИАЛА: КОНТРОЛЬНАЯ РАБОТА ПО ТЕМЕ "РУБКА МЕТАЛЛА"</h1>			
+				<p style="text-align: center;">
+					<input name="checkbox" id="checkbox" type="checkbox" class="checkbox" onclick="">
+					<label for="checkbox">хранить историю введенных данных</label>		
+				</p>
+				<p>	
+					<table>
+						<tr>
+							<td class="control_work_td" style="width: 20%;">
+								&nbsp;Ф. И. студента:
+							</td>
+							<td class="control_work_td">
+								<input id="field2_1" type="text" placeholder="Ф.И. студента" onchange="showInput();" class="control_work_input">
+							</td>
+						</tr>
+						<tr>
+							<td class="control_work_td">
+								&nbsp;№ группы:
+							</td>
+							<td class="control_work_td">
+								<input id="field2_2" type="text" placeholder="Номер группы" onchange="showInput();" class="control_work_input">				
+							</td>					
+						</tr>
+					</table>					
+				</p>
+				<p><strong>Задание: Письменно дайте ответы на вопросы.</strong></p>
+				<p>1. Рубка это – ... <br>
+				<textarea id="field2_3" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>2. Виды работ выполняемые рубкой: <br>
+				<textarea id="field2_4" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>3. Назовите элементы резания и углы режущей части зубила: <br>	
+				<img src="../images/topic2-8-1.png" alt="">				
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 10%;">
+							&nbsp;&nbsp;&nbsp;1&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_5" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;2&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_6" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;3&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_7" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;4&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_8" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;5&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_9" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;6&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_10" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;7&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_11" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>					
+				</table></p>
+				<p>4. Перечислите инструмент для рубки:<br>			
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 10%;">
+							&nbsp;&nbsp;&nbsp;4.1&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_12" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;4.2&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_13" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>				
+				</table></p>
+				<p>5. Перечислите части зубила:<br>	
+				<img src="../images/topic2-8-2.png" alt=""><br>	
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 10%;">
+							&nbsp;&nbsp;&nbsp;1&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_14" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;2&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_15" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;3&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_16" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>						
+				</table></p>
+				<p>6. Охарактеризуйте:<br>	
+				<table>
+					<tr>
+						<td class="control_work_td" style="text-align: center;">
+							Зубило
+						</td>
+						<td class="control_work_td" style="text-align: center;">
+							Крейцмейсель
+						</td>
+						<td class="control_work_td" style="text-align: center;">
+							Канавочник
+						</td>						
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							<textarea id="field2_17" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea"></textarea>
+						</td>
+						<td class="control_work_td">
+							<textarea id="field2_18" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea"></textarea>
+						</td>
+						<td class="control_work_td">
+							<textarea id="field2_19" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea"></textarea>
+						</td>							
+					</tr>						
+				</table></p>
+				<p>7. Перечислите приспособления для выполнения рубки:<br>	
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 10%;">
+							&nbsp;&nbsp;&nbsp;а)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_20" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;б)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_21" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>						
+				</table></p>
+				<p>8. Назовите инструменты для проверки угла заострения зубила, крейцмейселя:<br>
+				<textarea id="field2_22" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>9. Типы слесарных молотков:<br>			
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 10%;">
+							&nbsp;&nbsp;&nbsp;а)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_23" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;б)&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_24" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>				
+				</table></p>
+				<p>10. Назовите массу и область применения слесарных молотков:<br>			
+				<table>
+					<tr>
+						<td class="control_work_td" style="text-align: center; width: 135px;">
+							№ молотка
+						</td>
+						<td class="control_work_td" style="text-align: center;">
+							а) с круглым бойком:
+						</td>
+						<td class="control_work_td" style="text-align: center;">
+							б) с квадратным молотком:
+						</td>						
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;№1&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_25" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>
+						<td class="control_work_td">
+							<input id="field2_26" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>							
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;№2&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_27" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>
+						<td class="control_work_td">
+							<input id="field2_28" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>							
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;№3&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_29" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>
+						<td class="control_work_td">
+							<input id="field2_30" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>							
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;№4&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_31" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>
+						<td class="control_work_td">
+							<input id="field2_32" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>							
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;№5&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_33" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>
+						<td class="control_work_td">
+							<input id="field2_34" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>							
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;№6&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_35" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>
+						<td class="control_work_td">
+							<input id="field2_36" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>							
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;№7&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_37" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>
+						<td class="control_work_td">
+							<input id="field2_38" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>							
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;№8&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_39" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>
+						<td class="control_work_td">
+							<input id="field2_40" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>							
+					</tr>					
+				</table></p>
+				<p>11. Укажите углы заострения зубила для рубки:<br>			
+				<table>
+					<tr>
+						<td class="control_work_td" style="text-align: center;">
+							Алюминиевые сплавы
+						</td>
+						<td class="control_work_td" style="text-align: center;">
+							Медь, латунь
+						</td>
+						<td class="control_work_td" style="text-align: center;">
+							Сталь средней твердости
+						</td>
+						<td class="control_work_td" style="text-align: center;">
+							Чугун и бронза
+						</td>						
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							<textarea id="field2_41" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>
+						</td>
+						<td class="control_work_td">
+							<textarea id="field2_42" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>			
+						</td>
+						<td class="control_work_td">
+							<textarea id="field2_43" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>				
+						</td>	
+						<td class="control_work_td">
+							<textarea id="field2_44" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();" class="control_work_textarea" style="width: 100%;"></textarea>				
+						</td>							
+					</tr>					
+				</table></p>
+				<p>12. Объясните, почему боек молотка и ударную часть зубила изготавливают закругленной (сферической) формы:<br>
+				<textarea id="field2_45" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>13. Перечислите правила, обеспечивающие безопасность работ при рубке металла:<br>
+				<textarea id="field2_46" placeholder="Ваш ответ введите в это поле" name="text" onchange="showInput();"></textarea></p>
+				<p>14. Запишите основные правила и способы выполнения работ при рубке:<br>			
+				<table>
+					<tr>
+						<td class="control_work_td" style="width: 10%;">
+							&nbsp;&nbsp;&nbsp;14.1&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_47" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;14.2&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_48" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;14.3&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_49" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td" style="width: 20%;">
+							&nbsp;&nbsp;&nbsp;14.4&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_50" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">
+						</td>
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;14.5&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_51" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>
+					<tr>
+						<td class="control_work_td">
+							&nbsp;&nbsp;&nbsp;14.6&nbsp;
+						</td>
+						<td class="control_work_td">
+							<input id="field2_52" type="text" placeholder="Ваш ответ введите в это поле" onchange="showInput();" class="control_work_input">				
+						</td>					
+					</tr>						
+				</table></p>				
+				<!-- Отладка экспорта - Начало -->
+				<div id="page-content" style="display: none;">
+					<p style="text-align: center; font-size: 16pt;">
+							<strong>
+								Контрольная работа по теме<br> "Рубка металла"
+							</strong>
+					</p>
+					<p style="text-indent: 0px;">
+						Ф. И. студента: &nbsp;<span id="answer2_1"></span>
+						<br>№ группы: &nbsp;<span id="answer2_2"></span>					
+					</p>
+					<p>
+						Задание: Письменно дайте ответы на вопросы.
+					</p>
+					<!-- Контент для экспорта -->
+					<p>
+						1. Рубка – это ...
+						<br><span id="answer2_3"></span>
+					</p>
+					<p>
+						2. Виды работ выполняемые рубкой:
+						<br><span id="answer2_4"></span>
+					</p>
+					<p>
+						3. Назовите элементы резания и углы режущей части зубила:
+						<br>1 - <span id="answer2_5"></span>
+						<br>2 - <span id="answer2_6"></span>
+						<br>3 - <span id="answer2_7"></span>
+						<br>4 - <span id="answer2_8"></span>
+						<br>5 - <span id="answer2_9"></span>
+						<br>6 - <span id="answer2_10"></span>
+						<br>7 - <span id="answer2_11"></span>
+					</p>
+					<p>
+						4. Перечислите инструмент для рубки:
+						<br>1 - <span id="answer2_12"></span>
+						<br>2 - <span id="answer2_13"></span>
+					</p>
+					<p>	
+						5. Перечислите части зубила:
+						<br>1 - <span id="answer2_14"></span>
+						<br>2 - <span id="answer2_15"></span>
+						<br>3 - <span id="answer2_16"></span>
+					</p>
+					<p>	
+						6. Охарактеризуйте: 
+						<br>Зубило:
+						<br><span id="answer2_17"></span>
+						<br>Крейцмейсель:
+						<br><span id="answer2_18"></span>
+						<br>Канавочник:
+						<br><span id="answer2_19"></span>
+					</p>
+					<p>	
+						7. Перечислите приспособления для выполнения рубки:
+						<br>а) <span id="answer2_20"></span>
+						<br>б) <span id="answer2_21"></span>
+					</p>
+					<p>	
+						8. Назовите приборы для проверки угла заострения зубила, крейцмейселя:
+						<br><span id="answer2_22"></span>
+					</p>
+					<p>	
+						9. Типы слесарных молотков:
+						<br>а) <span id="answer2_23"></span>
+						<br>б) <span id="answer2_24"></span>
+					</p>
+					<p>	
+						10. Назовите массу и область применения слесарных молотков:
+						<br>с круглым бойком:
+						<br>№1) <span id="answer2_25"></span>
+						<br>№2) <span id="answer2_26"></span>
+						<br>№3) <span id="answer2_27"></span>
+						<br>№4) <span id="answer2_28"></span>
+						<br>№5) <span id="answer2_29"></span>
+						<br>№6) <span id="answer2_30"></span>
+						<br>№7) <span id="answer2_31"></span>
+						<br>№8) <span id="answer2_32"></span>
+						<br>с квадратным молотком:
+						<br>№1) <span id="answer2_33"></span>
+						<br>№2) <span id="answer2_34"></span>
+						<br>№3) <span id="answer2_35"></span>
+						<br>№4) <span id="answer2_36"></span>
+						<br>№5) <span id="answer2_37"></span>
+						<br>№6) <span id="answer2_38"></span>
+						<br>№7) <span id="answer2_39"></span>
+						<br>№8) <span id="answer2_40"></span>
+					</p>
+					<p>	
+						11. Укажите углы заострения зубила для рубки:
+						<br>Алюминиевые сплавы
+						<br><span id="answer2_41"></span>
+						<br>Медь, латунь
+						<br><span id="answer2_42"></span>
+						<br>Сталь средней твердости
+						<br><span id="answer2_43"></span>
+						<br>Чугун и бронза
+						<br><span id="answer2_44"></span>
+					</p>
+					<p>	
+						12. Объясните, почему боек молотка и ударную часть зубила изготавливают закругленной (сферической) формы.
+						<br><span id="answer2_45"></span>
+					</p>
+					<p>	
+						13. Перечислите правила, обеспечивающие безопасность работ при рубке металла.
+						<br><span id="answer2_46"></span>
+					</p>
+					<p>	
+						14. Запишите основные правила и способы выполнения работ при рубке:
+						<br>1 - <span id="answer2_47"></span>
+						<br>2 - <span id="answer2_48"></span>
+						<br>3 - <span id="answer2_49"></span>
+						<br>4 - <span id="answer2_50"></span>
+						<br>5 - <span id="answer2_51"></span>
+						<br>6 - <span id="answer2_52"></span>
+					</p>	
+				</div>
+				<!-- Отладка экспорта - Конец -->				
+				<a class="word-export buttons" href="javascript:void(0);"><button class="button word-export" onclick="">Сохранить результаты<span class="buttonhelp">Сохранить работу в формате *.doc</span></button></a> 
+				<a class="buttons"><button class="button" onclick="clearfield2_(); clearLocalStorage();">Очистить все поля<span class="buttonhelp">Стереть данные и историю из всех полей</span></button></a> 			
+			</div>
+		</div>
+	</div>
+	<div id="bottom">
+		<a href="../tests/topic2_7/show.html" class="buttons"><button class="button">Назад<span class="buttonhelp">Промежуточный тест</span></button></a>	
+		<a href="content.html" class="buttons"><button class="button">К содержанию<span class="buttonhelp">Перейти к перечню заголовков</span></button></a>	
+		<hr><p>МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник»</p>
+	</div> 	
+ </body>
+</html>
+<script>
+	//html-to-doc
+    jQuery(document).ready(function($) {
+
+        $("a.word-export").click(function(event) {
+            $("#page-content").wordExport();
+        });
+    });
+</script> 
+<script type="text/javascript">
+function showInput() {
+	for (var i=1; i < 53; i++) {
+		var message_entered =  document.getElementById("field2_" + i.toString()).value;
+		document.getElementById("answer2_" + i.toString()).innerHTML = message_entered;
+	}	
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+      	    $("body").fadeIn(300);
+	
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(300, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}    
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#back-top").hide();
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-top').fadeIn();
+				} else {
+					$('#back-top').fadeOut();
+				}
+			});
+			
+			$('#back-top a').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+	});
+</script>
+<script>
+	var txt=document.getElementById("txt");
+	txt.value=sessionStorage["txt"] || "?";
+	window.go=function(){
+			 sessionStorage["txt"]=txt.value;
+	}
+</script>
+<script>
+	// помнить введенные поля
+	function dotest(){
+		/*
+		// отладка
+		for (var i=1; i < 53; i++) {
+			document.getElementById("field2_" + i.toString()).value = "Ответ" + i.toString();
+		}	
+		*/
+		// помнить checkbox
+		$(function () {
+			var data = localStorage.getItem("showning");
+			if (data !== null) {
+				$("input[name='checkbox']").attr("checked", "checked");
+			}
+		});
+
+		$("input[name='checkbox']").click(function () {
+			if ($(this).is(":checked")) {
+				localStorage.setItem("showning", 1);
+			} else {
+				localStorage.removeItem("showning");
+			}
+		});
+	
+		// всего 52 поля
+		var field2_1 = document.getElementById('field2_1');
+		if (localStorage.field2_1){
+			 field2_1.value = localStorage.field2_1;
+		}
+		field2_1.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_1 = field2_1.value;
+		}, false);
+
+		var field2_2 = document.getElementById('field2_2');
+		if (localStorage.field2_2){
+			 field2_2.value = localStorage.field2_2;
+		}
+		field2_2.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_2 = field2_2.value;
+		}, false);
+
+		var field2_3 = document.getElementById('field2_3');
+		if (localStorage.field2_3){
+			 field2_3.value = localStorage.field2_3;
+		}
+		field2_3.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_3 = field2_3.value;
+		}, false);
+
+		var field2_4 = document.getElementById('field2_4');
+		if (localStorage.field2_4){
+			 field2_4.value = localStorage.field2_4;
+		}
+		field2_4.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_4 = field2_4.value;
+		}, false);
+
+		var field2_5 = document.getElementById('field2_5');
+		if (localStorage.field2_5){
+			 field2_5.value = localStorage.field2_5;
+		}
+		field2_5.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_5 = field2_5.value;
+		}, false);
+
+		var field2_6 = document.getElementById('field2_6');
+		if (localStorage.field2_6){
+			 field2_6.value = localStorage.field2_6;
+		}
+		field2_6.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_6 = field2_6.value;
+		}, false);
+
+		var field2_7 = document.getElementById('field2_7');
+		if (localStorage.field2_7){
+			 field2_7.value = localStorage.field2_7;
+		}
+		field2_7.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_7 = field2_7.value;
+		}, false);
+
+		var field2_8 = document.getElementById('field2_8');
+		if (localStorage.field2_8){
+			 field2_8.value = localStorage.field2_8;
+		}
+		field2_8.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_8 = field2_8.value;
+		}, false);
+
+		var field2_9 = document.getElementById('field2_9');
+		if (localStorage.field2_9){
+			 field2_9.value = localStorage.field2_9;
+		}
+		field2_9.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_9 = field2_9.value;
+		}, false);
+
+		var field2_10 = document.getElementById('field2_10');
+		if (localStorage.field2_10){
+			 field2_10.value = localStorage.field2_10;
+		}
+		field2_10.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_10 = field2_10.value;
+		}, false);
+
+		var field2_11 = document.getElementById('field2_11');
+		if (localStorage.field2_11){
+			 field2_11.value = localStorage.field2_11;
+		}
+		field2_11.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_11 = field2_11.value;
+		}, false);
+
+		var field2_12 = document.getElementById('field2_12');
+		if (localStorage.field2_12){
+			 field2_12.value = localStorage.field2_12;
+		}
+		field2_12.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_12 = field2_12.value;
+		}, false);
+
+		var field2_13 = document.getElementById('field2_13');
+		if (localStorage.field2_13){
+			 field2_13.value = localStorage.field2_13;
+		}
+		field2_13.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_13 = field2_13.value;
+		}, false);
+
+		var field2_14 = document.getElementById('field2_14');
+		if (localStorage.field2_14){
+			 field2_14.value = localStorage.field2_14;
+		}
+		field2_14.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_14 = field2_14.value;
+		}, false);
+
+		var field2_15 = document.getElementById('field2_15');
+		if (localStorage.field2_15){
+			 field2_15.value = localStorage.field2_15;
+		}
+		field2_15.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_15 = field2_15.value;
+		}, false);
+
+		var field2_16 = document.getElementById('field2_16');
+		if (localStorage.field2_16){
+			 field2_16.value = localStorage.field2_16;
+		}
+		field2_16.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_16 = field2_16.value;
+		}, false);
+
+		var field2_17 = document.getElementById('field2_17');
+		if (localStorage.field2_17){
+			 field2_17.value = localStorage.field2_17;
+		}
+		field2_17.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_17 = field2_17.value;
+		}, false);
+
+		var field2_18 = document.getElementById('field2_18');
+		if (localStorage.field2_18){
+			 field2_18.value = localStorage.field2_18;
+		}
+		field2_18.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_18 = field2_18.value;
+		}, false);
+
+		var field2_19 = document.getElementById('field2_19');
+		if (localStorage.field2_19){
+			 field2_19.value = localStorage.field2_19;
+		}
+		field2_19.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_19 = field2_19.value;
+		}, false);
+
+		var field2_20 = document.getElementById('field2_20');
+		if (localStorage.field2_20){
+			 field2_20.value = localStorage.field2_20;
+		}
+		field2_20.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_20 = field2_20.value;
+		}, false);
+
+		var field2_21 = document.getElementById('field2_21');
+		if (localStorage.field2_21){
+			 field2_21.value = localStorage.field2_21;
+		}
+		field2_21.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_21 = field2_21.value;
+		}, false);
+
+		var field2_22 = document.getElementById('field2_22');
+		if (localStorage.field2_22){
+			 field2_22.value = localStorage.field2_22;
+		}
+		field2_22.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_22 = field2_22.value;
+		}, false);
+
+		var field2_23 = document.getElementById('field2_23');
+		if (localStorage.field2_23){
+			 field2_23.value = localStorage.field2_23;
+		}
+		field2_23.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_23 = field2_23.value;
+		}, false);
+
+		var field2_24 = document.getElementById('field2_24');
+		if (localStorage.field2_24){
+			 field2_24.value = localStorage.field2_24;
+		}
+		field2_24.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_24 = field2_24.value;
+		}, false);
+
+		var field2_25 = document.getElementById('field2_25');
+		if (localStorage.field2_25){
+			 field2_25.value = localStorage.field2_25;
+		}
+		field2_25.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_25 = field2_25.value;
+		}, false);
+
+		var field2_26 = document.getElementById('field2_26');
+		if (localStorage.field2_26){
+			 field2_26.value = localStorage.field2_26;
+		}
+		field2_26.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_26 = field2_26.value;
+		}, false);
+
+		var field2_27 = document.getElementById('field2_27');
+		if (localStorage.field2_27){
+			 field2_27.value = localStorage.field2_27;
+		}
+		field2_27.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_27 = field2_27.value;
+		}, false);
+
+		var field2_28 = document.getElementById('field2_28');
+		if (localStorage.field2_28){
+			 field2_28.value = localStorage.field2_28;
+		}
+		field2_28.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_28 = field2_28.value;
+		}, false);
+
+		var field2_29 = document.getElementById('field2_29');
+		if (localStorage.field2_29){
+			 field2_29.value = localStorage.field2_29;
+		}
+		field2_29.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_29 = field2_29.value;
+		}, false);
+
+		var field2_30 = document.getElementById('field2_30');
+		if (localStorage.field2_30){
+			 field2_30.value = localStorage.field2_30;
+		}
+		field2_30.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_30 = field2_30.value;
+		}, false);
+
+		var field2_31 = document.getElementById('field2_31');
+		if (localStorage.field2_31){
+			 field2_31.value = localStorage.field2_31;
+		}
+		field2_31.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_31 = field2_31.value;
+		}, false);
+
+		var field2_32 = document.getElementById('field2_32');
+		if (localStorage.field2_32){
+			 field2_32.value = localStorage.field2_32;
+		}
+		field2_32.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_32 = field2_32.value;
+		}, false);
+
+		var field2_33 = document.getElementById('field2_33');
+		if (localStorage.field2_33){
+			 field2_33.value = localStorage.field2_33;
+		}
+		field2_33.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_33 = field2_33.value;
+		}, false);
+
+		var field2_34 = document.getElementById('field2_34');
+		if (localStorage.field2_34){
+			 field2_34.value = localStorage.field2_34;
+		}
+		field2_34.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_34 = field2_34.value;
+		}, false);
+
+		var field2_35 = document.getElementById('field2_35');
+		if (localStorage.field2_35){
+			 field2_35.value = localStorage.field2_35;
+		}
+		field2_35.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_35 = field2_35.value;
+		}, false);
+
+		var field2_36 = document.getElementById('field2_36');
+		if (localStorage.field2_36){
+			 field2_36.value = localStorage.field2_36;
+		}
+		field2_36.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_36 = field2_36.value;
+		}, false);
+
+		var field2_37 = document.getElementById('field2_37');
+		if (localStorage.field2_37){
+			 field2_37.value = localStorage.field2_37;
+		}
+		field2_37.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_37 = field2_37.value;
+		}, false);
+
+		var field2_38 = document.getElementById('field2_38');
+		if (localStorage.field2_38){
+			 field2_38.value = localStorage.field2_38;
+		}
+		field2_38.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_38 = field2_38.value;
+		}, false);
+
+		var field2_39 = document.getElementById('field2_39');
+		if (localStorage.field2_39){
+			 field2_39.value = localStorage.field2_39;
+		}
+		field2_39.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_39 = field2_39.value;
+		}, false);
+
+		var field2_40 = document.getElementById('field2_40');
+		if (localStorage.field2_40){
+			 field2_40.value = localStorage.field2_40;
+		}
+		field2_40.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_40 = field2_40.value;
+		}, false);
+
+		var field2_41 = document.getElementById('field2_41');
+		if (localStorage.field2_41){
+			 field2_41.value = localStorage.field2_41;
+		}
+		field2_41.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_41 = field2_41.value;
+		}, false);
+
+		var field2_42 = document.getElementById('field2_42');
+		if (localStorage.field2_42){
+			 field2_42.value = localStorage.field2_42;
+		}
+		field2_42.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_42 = field2_42.value;
+		}, false);
+
+		var field2_43 = document.getElementById('field2_43');
+		if (localStorage.field2_43){
+			 field2_43.value = localStorage.field2_43;
+		}
+		field2_43.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_43 = field2_43.value;
+		}, false);
+
+		var field2_44 = document.getElementById('field2_44');
+		if (localStorage.field2_44){
+			 field2_44.value = localStorage.field2_44;
+		}
+		field2_44.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_44 = field2_44.value;
+		}, false);
+
+		var field2_45 = document.getElementById('field2_45');
+		if (localStorage.field2_45){
+			 field2_45.value = localStorage.field2_45;
+		}
+		field2_45.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_45 = field2_45.value;
+		}, false);
+
+		var field2_46 = document.getElementById('field2_46');
+		if (localStorage.field2_46){
+			 field2_46.value = localStorage.field2_46;
+		}
+		field2_46.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_46 = field2_46.value;
+		}, false);
+
+		var field2_47 = document.getElementById('field2_47');
+		if (localStorage.field2_47){
+			 field2_47.value = localStorage.field2_47;
+		}
+		field2_47.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_47 = field2_47.value;
+		}, false);
+
+		var field2_48 = document.getElementById('field2_48');
+		if (localStorage.field2_48){
+			 field2_48.value = localStorage.field2_48;
+		}
+		field2_48.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_48 = field2_48.value;
+		}, false);
+
+		var field2_49 = document.getElementById('field2_49');
+		if (localStorage.field2_49){
+			 field2_49.value = localStorage.field2_49;
+		}
+		field2_49.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_49 = field2_49.value;
+		}, false);
+
+		var field2_50 = document.getElementById('field2_50');
+		if (localStorage.field2_50){
+			 field2_50.value = localStorage.field2_50;
+		}
+		field2_50.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_50 = field2_50.value;
+		}, false);
+
+		var field2_51 = document.getElementById('field2_51');
+		if (localStorage.field2_51){
+			 field2_51.value = localStorage.field2_51;
+		}
+		field2_51.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_51 = field2_51.value;
+		}, false);
+
+		var field2_52 = document.getElementById('field2_52');
+		if (localStorage.field2_52){
+			 field2_52.value = localStorage.field2_52;
+		}
+		field2_52.addEventListener('blur', function(){
+			 if (document.getElementById('checkbox').checked == true) localStorage.field2_52 = field2_52.value;
+		}, false);
+		
+	}
+</script>
+<script>
+	// очистить поля
+	function clearfield2_(){
+		for (var i=1; i < 53; i++) {
+			document.getElementById("field2_" + i.toString()).value = "";
+		}	
+	}
+</script>
+<script>
+	// очистить localStorage
+	function clearLocalStorage(){
+		localStorage.clear();
+	}
+</script>

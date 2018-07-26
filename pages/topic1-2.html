@@ -1,0 +1,134 @@
+<script type="text/javascript">
+	// для плавной смены контента
+    $(document).ready(function() {
+      	$("body").css("display", "none");
+    });
+</script>
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" type="image/ico" href="../images/favicon.png"/>
+  <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+	МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник» | Электронный учебник 
+  </title>
+  <link href="../css/mystylecontent.css" rel="stylesheet">
+  <!-- подключение локальной базы данных -->
+  <!-- <script type="text/javascript" src="../js/localdb.js"></script> -->
+ </head>
+ <body>
+	<div class="class">
+		<div id="back-top"><a href="#top"><img src="../images/uparrow.png" style="width: 50px; height: 80px;" alt=""></a></div>
+	</div>
+	<div id="head">
+		<a href="../index.html">На главную</a>
+		<a href="content.html">Содержание</a>
+	</div> 
+	<div id="article">
+		<div class="parent">
+			<div class="child">
+				<h1 class="boxShadow10">РАЗМЕТКА. СПОСОБЫ РАЗМЕТКИ</h1>
+				<br>
+				<div id="block">
+					<h2>Способы разметки</h2>
+				</div>
+				<div class="container">
+					<div class="box">	
+						<div id="block" style="margin-top: 15px; margin-left: 10px;">
+							<p>
+								<span class="bold">Разметка по шаблону:</span><br>
+								Обычно применяется при изготовлении больших партий одинаковых по форме и размерам деталей, но иногда этим способом размечают малые партии, но сложных деталей.
+							</p>
+						</div>	
+					</div>
+				</div>
+				<div class="container">
+					<div class="box">								
+						<div id="block" style="margin-top: 15px; margin-left: 10px;">
+							<p>
+								<span class="bold">Разметка по образцу:</span><br>
+								Применяется при ремонтных работах, когда размеры снимают непосредственно с вышедшей из строя детали и переносят на размечаемый материал.
+							</p>
+						</div>	
+					</div>
+				</div>
+				<div class="container">
+					<div class="box">								
+						<div id="block" style="margin-top: 15px; margin-left: 10px;">
+							<p>
+								<span class="bold">Разметка по месту:</span><br>
+								Применяется при сборке больших деталей. Одну деталь размечают по другой в таком положении, в котором они должны быть соединены.
+							</p>
+						</div>	
+					</div>
+				</div>
+				<div class="container">
+					<div class="box">								
+						<div id="block" style="margin-top: 15px; margin-left: 10px;">
+							<p>
+								<span class="bold">Разметка карандашом:</span><br>
+								Производится по линейке на заготовках из алюминия и дюралюминия, Размечать последние с помощью чертилки не разрешается, так как при нанесении рисок разрешается защитный слой и создаются условия для проявления коррозии.
+							</p>
+						</div>	
+					</div>
+				</div>
+				<div class="container">
+					<div class="box">								
+						<div id="block" style="margin-top: 15px; margin-left: 10px;">
+							<p>
+								<span class="bold">Точная разметка:</span><br>
+								Выполняют по тем же правилам, что и обычную, но применяют более точные измерительные и разметочные инструменты.
+							</p>
+						</div>	
+					</div>
+				</div>							
+			</div>
+			<div class="helper"></div>
+		</div>
+    </div>
+	<div id="bottom">
+		<a href="topic1-1.html" class="buttons"><button class="button">Назад<span class="buttonhelp">Основные сведения</span></button></a>	
+		<a href="content.html" class="buttons"><button class="button">К содержанию<span class="buttonhelp">Перейти к перечню заголовков</span></button></a>
+		<a href="topic1-3.html" class="buttons"><button class="button">Далее<span class="buttonhelp">Инструменты</span></button></a>	
+		<hr><p>МДК.04.01 Теоретические приемы выполнения работ по профессии «Слесарь-ремонтник»</p>
+	</div> 	
+ </body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+      	    $("body").fadeIn(300);
+	
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(300, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}    
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#back-top").hide();
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-top').fadeIn();
+				} else {
+					$('#back-top').fadeOut();
+				}
+			});
+			
+			$('#back-top a').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+	});
+</script>
